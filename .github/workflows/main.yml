@@ -65,7 +65,7 @@ jobs:
             # 等待页面完全加载
             WebDriverWait(driver, 30).until(
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
-            
+             )
             # 检查是否有Cloudflare挑战
             page_source = driver.page_source
             if "Just a moment" in page_source or "Cloudflare" in page_source:
