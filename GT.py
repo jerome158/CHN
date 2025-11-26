@@ -31,7 +31,7 @@ def download_m3u_content():
         
         # 等待页面加载
         print('等待页面加载...')
-        time.sleep(15)
+        time.sleep(30)
         
         # 获取页面内容
         content = driver.page_source
