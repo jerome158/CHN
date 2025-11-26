@@ -53,7 +53,7 @@ jobs:
         print("开始下载M3U文件内容...")
         print("启动Chrome浏览器...")
         
-        target_url = "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true")
+        target_url = "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true"
         
         print(f"正在访问: {target_url}")
         driver = webdriver.Chrome(options=chrome_options)
