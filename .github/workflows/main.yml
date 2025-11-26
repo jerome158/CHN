@@ -1,36 +1,33 @@
-name: Download to TXT
-  
+name: Download M3U and Convert to TXT
+
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   schedule:
-    - cron: '20 7 * * *' # 每天UTC时间00:00自动运行
-  workflow_dispatch: # 支持手动触发
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   convert-m3u-to-txt:
     runs-on: ubuntu-latest
-
-    steps:
     
+    steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Download M3U file
       run: |
         curl -L -o downloaded.m3u "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true"
-        echo "M3U文件下载完成"
 
     - name: Convert M3U to TXT
       run: |
         if [ -f "downloaded.m3u" ]; then
-        # 将M3U内容转换为TXT格式
           cat downloaded.m3u > mig2.txt
-          echo "M3U文件已成功转换为TXT格式"
-          echo "转换后的文件行数: $(wc -l < mig2.txt)"
-        else
-          echo "错误：未找到下载的M3U文件"
-          exit 1
         fi
 
     - name: Commit and push changes
@@ -38,5 +35,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add mig2.txt
-        git commit -m "自动更新：M3U文件转换为TXT格式 [skip ci]" || echo "没有变化需要提交"
+        git diff --staged --quiet || git commit -m "自动更新：M3U文件转换为TXT格式 [skip ci]"
         git push
