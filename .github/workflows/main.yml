@@ -1,18 +1,16 @@
 name: Download
 
 on:
-  push:
-    branches: [ main, master ]
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:
 
 jobs:
-  download-m3u:
+  download:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -22,12 +20,12 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Chrome and dependencies
+    - name: Install Chrome
       run: |
         sudo apt-get update
         sudo apt-get install -y chromium-browser chromium-chromedriver
 
-    - name: Install Python packages
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install selenium
@@ -36,24 +34,22 @@ jobs:
       run: |
         python -c "from selenium import webdriver; from selenium.webdriver.chrome.options import Options; import time; options = Options(); options.add_argument('--headless'); options.add_argument('--no-sandbox'); options.add_argument('--disable-dev-shm-usage'); driver = webdriver.Chrome(options=options); url = 'https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true'; print('正在访问:', url); driver.get(url); time.sleep(15); content = driver.page_source; print('页面加载完成'); with open('mig2.txt', 'w', encoding='utf-8') as f: f.write(content); print('内容已保存到 mig2.txt'); driver.quit()"
 
-    - name: Check downloaded content
+    - name: Verify download
       run: |
         if [ -f "mig2.txt" ]; then
-          echo "文件下载成功"
-          echo "文件大小: $(wc -c < mig2.txt) bytes"
-          echo "文件行数: $(wc -l < mig2.txt)"
-          echo "前5行内容:"
-          head -5 mig2.txt
+          echo "✅ 下载成功"
+          echo "📊 文件信息:"
+          echo "  大小: $(wc -c < mig2.txt) bytes"
+          echo "  行数: $(wc -l < mig2.txt)"
         else
-          echo "文件下载失败"
+          echo "❌ 下载失败"
           exit 1
         fi
 
-    - name: Commit and push changes
+    - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add mig2.txt
-        git diff --staged --quiet || git commit -m "自动更新：M3U文件内容 [skip ci]"
+        git diff --staged --quiet || git commit -m "自动更新M3U内容 [skip ci]"
         git push
-
