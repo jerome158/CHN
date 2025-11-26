@@ -1,7 +1,9 @@
 name: Download
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '0 2 * * *'  # 每天凌晨2点自动运行
 
 jobs:
   download-m3u:
@@ -10,33 +12,93 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
+      
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
-
-    - name: Install Chrome and dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y chromium-browser chromium-chromedriver
-
-    - name: Install Python packages
+      
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install selenium webdriver-manager
-
-    - name: Run Python script
+        pip install selenium beautifulsoup4 requests
+      
+    - name: Install Chrome
       run: |
-        python GT.py
-
-    - name: Check results
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+      
+    - name: Download M3U file
       run: |
-        if [ -f "mig2.txt" ]; then
-          echo "✅ 下载成功"
-          echo "📊 文件信息:"
-          echo "  大小: $(wc -c < mig2.txt) bytes"
-        else
-          echo "❌ 下载失败"
-        fi
+        python << 'EOF'
+        import time
+        import requests
+        from selenium import webdriver
+        from selenium.webdriver.chrome.options import Options
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
+        from bs4 import BeautifulSoup
+        import json
+        
+        # 配置Chrome选项
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--window-size=1920,1080')
+        chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+        
+        print("开始下载M3U文件内容...")
+        print("启动Chrome浏览器...")
+        
+        target_url = "https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true")
+        
+        print(f"正在访问: {target_url}")
+        driver = webdriver.Chrome(options=chrome_options)
+        
+        try:
+            driver.get(target_url)
+            print("等待页面加载...")
+            
+            # 等待页面完全加载
+            WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            
+            # 检查是否有Cloudflare挑战
+            page_source = driver.page_source
+            if "Just a moment" in page_source or "Cloudflare" in page_source:
+                print("检测到Cloudflare防护，等待挑战完成...")
+                time.sleep(10)  # 给Cloudflare挑战足够时间
+                
+            print("页面加载完成")
+            
+            # 获取页面内容
+            content = driver.page_source
+            
+            # 保存到文件
+            with open("mig2.txt", "w", encoding="utf-8") as f:
+                    f.write(content)
+                
+            import os
+            file_size = os.path.getsize("mig2.txt")
+            print(f"内容已保存到 mig2.txt")
+            print(f"文件大小: {file_size} 字节")
+            
+        except Exception as e:
+            print(f"下载过程中出现错误: {str(e)}")
+            
+        finally:
+            driver.quit()
+            print("浏览器已关闭")
+            
+        EOF
+      
+    - name: Commit and push if changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add mig2.txt
+        git diff --staged --quiet || (git commit -m "Auto-update M3U file [skip ci]" && git push)
 
