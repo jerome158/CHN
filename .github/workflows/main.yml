@@ -44,21 +44,22 @@ jobs:
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         driver = webdriver.Chrome(options=options)
+        
         try:
-        url = 'https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true'
-        print('正在访问:', url)
-        driver.get(url)
-        time.sleep(10)  
-        content = driver.page_source
-        print('页面加载完成')
-        with open('mig2.txt', 'w', encoding='utf-8') as f:
-        f.write(content)
-        print('内容已保存到 mig2.txt')
-        except Exception as e:
-        print('错误:', e)
-        finally:
-        driver.quit()
-        "
+            url = 'https://bc.188766.xyz/?ip=&mishitong=true&mima=mianfeibuhuaqian&json=true'
+            print('正在访问:', url)
+            driver.get(url)
+            time.sleep(10)  
+            content = driver.page_source
+            print('页面加载完成')
+            with open('mig2.txt', 'w', encoding='utf-8') as f:
+                f.write(content)
+            print('内容已保存到 mig2.txt')
+            except Exception as e:
+                print('错误:', e)
+            finally:
+                driver.quit()
+          "
 
     - name: Commit and push changes
       run: |
