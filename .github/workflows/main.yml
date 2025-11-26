@@ -1,10 +1,6 @@
 name: Download
 
 on:
-  push:
-    branches: [ main ]
-  schedule:
-    - cron: '0 2 * * *'  # 每天UTC 2:00运行
   workflow_dispatch:
 
 jobs:
@@ -14,8 +10,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,29 +24,19 @@ jobs:
     - name: Install Python packages
       run: |
         python -m pip install --upgrade pip
-        pip install selenium
+        pip install selenium webdriver-manager
 
-    - name: Run M3U download script
+    - name: Run Python script
       run: |
         python GT.py
 
-    - name: Verify results
+    - name: Check results
       run: |
         if [ -f "mig2.txt" ]; then
-          echo "✅ 脚本执行成功"
-          echo "📊 输出文件信息："
-          echo "  大小：$(wc -c < mig2.txt) 字节"
-          echo "  行数：$(wc -l < mig2.txt)"
+          echo "✅ 下载成功"
+          echo "📊 文件信息:"
+          echo "  大小: $(wc -c < mig2.txt) bytes"
         else
-          echo "❌ 脚本执行失败"
-          exit 1
+          echo "❌ 下载失败"
         fi
-
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add mig2.txt
-        git diff --staged --quiet || git commit -m "自动更新M3U内容 [$(date +'%Y-%m-%d %H:%M')]"
-        git push
 
