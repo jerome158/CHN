@@ -45,16 +45,6 @@ jobs:
           echo "❌ 输出文件未创建"
         fi
     
-    - name: Create debug report
-      run: |
-        echo "# M3U转换调试报告" > debug_report.md
-        echo "" >> debug_report.md
-        echo "## 文件状态" >> debug_report.md
-        echo "- mig2.txt 存在: $([ -f "mig2.txt" ] && echo "是" || echo "否") >> debug_report.md
-        if [ -f "channels.txt" ]; then
-          echo "- 输出文件: channels.txt" >> debug_report.md
-          echo "- 频道数量: $(wc -l < channels.txt)" >> debug_report.md
-        fi
     
     - name: Commit results
       if: steps.debug_convert.outcome == 'success'
