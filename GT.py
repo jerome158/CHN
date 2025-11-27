@@ -48,7 +48,7 @@ def download_m3u_file():
                 if content != old_content:
                     # 保存旧内容用于下次比较
                     with open(output_file + '.old', 'w', encoding='utf-8') as f:
-                    f.write(content)
+                        f.write(content)
                 
                 print("::set-output name=changed::true")
                 return True
