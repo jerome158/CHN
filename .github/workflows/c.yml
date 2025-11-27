@@ -22,6 +22,7 @@ jobs:
         import re
         with open('mig2.txt', 'r', encoding='utf-8') as f:
             lines = f.readlines()
+            print(f"总行数: {len(lines)}", flush=True)
     
         output = []
         name = ''
@@ -37,7 +38,7 @@ jobs:
                 output.append(f'{name} | {line}')
                 name = ''
     
-        with open('channels.txt', 'w', encoding='utf-8') as f:
+        with open('mig3.txt', 'w', encoding='utf-8') as f:
             f.write('\\n'.join(output))
     
         print(f'转换完成，共 {len(output)} 个频道')
