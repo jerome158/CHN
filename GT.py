@@ -32,7 +32,7 @@ def download_m3u_file():
             # 验证内容是否为有效的M3U文件
             if content.strip().startswith('#EXTM3U'):
                 # 保存文件
-                output_file = 'playlist.m3u'
+                output_file = 'mig2.txt'
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(content)
                 
