@@ -30,9 +30,11 @@ jobs:
           file mig2.txt
           wc -l mig2.txt
           head -10 mig2.txt
-        
-        echo -e "\n=== 执行转换 ==="
-        python C.py mig2.txt channels.txt
+          echo -e "\n=== 执行转换 ==="
+          python C.py mig2.txt channels.txt
+
+        fi
+
         
         # 检查转换结果
         if [ -f "channels.txt" ]; then
