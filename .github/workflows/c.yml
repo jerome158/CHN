@@ -12,40 +12,41 @@ jobs:
     permissions:
       contents: write
     
-  steps:
-  - name: Checkout
-    uses: actions/checkout@v4
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
 
-  - name: Convert M3U format
-    run: |
-      python -c "
-      import re
-      with open('mig2.txt', 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+    - name: Convert M3U format
+      run: |
+        python -c "
+        import re
+        with open('mig2.txt', 'r', encoding='utf-8') as f:
+            lines = f.readlines()
     
-      output = []
-      name = ''
+        output = []
+        name = ''
     
-    for line in lines:
-        line = line.strip()
-        if line.startswith('#EXTINF:'):
-            match = re.search(r'#EXTINF:-?\d+,(.*)', line)
-            if match:
-                name = re.sub(r'[^\w\s\u4e00-\u9fa5\-_]', '', match.group(1))
-                name = name.replace('|', '-')
-        elif line.startswith('http') and name:
-            output.append(f'{name} | {line}')
-            name = ''
+        for line in lines:
+            line = line.strip()
+            if line.startswith('#EXTINF:'):
+                match = re.search(r'#EXTINF:-?\d+,(.*)', line)
+                if match:
+                    name = re.sub(r'[^\w\s\u4e00-\u9fa5\-_]', '', match.group(1))
+                    name = name.replace('|', '-')
+            elif line.startswith('http') and name:
+                output.append(f'{name} | {line}')
+                name = ''
     
-      with open('mig3.txt', 'w', encoding='utf-8') as f:
-        f.write('\\n'.join(output))
+        with open('channels.txt', 'w', encoding='utf-8') as f:
+            f.write('\\n'.join(output))
+    
         print(f'转换完成，共 {len(output)} 个频道'
-"
+        "
 
-- name: Commit result
-  run: |
-    git config user.name "GitHub Actions"
-    git config user.email "actions@github.com"
-    git add channels.txt
-    git commit -m 'Update channels list' || exit 0
-    git push
+    - name: Commit result
+      run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add channels.txt
+          git commit -m 'Update channels list' || exit 0
+          git push
