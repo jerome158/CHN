@@ -40,7 +40,7 @@ jobs:
         with open('channels.txt', 'w', encoding='utf-8') as f:
             f.write('\\n'.join(output))
     
-        print(f'转换完成，共 {len(output)} 个频道'）
+        print(f'转换完成，共 {len(output)} 个频道')
         "
 
     - name: Commit result
