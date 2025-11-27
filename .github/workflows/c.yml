@@ -22,7 +22,6 @@ jobs:
         import re
         with open('mig2.txt', 'r', encoding='utf-8') as f:
             lines = f.readlines()
-            print(f"总行数: {len(lines)}", flush=True)
     
         output = []
         name = ''
