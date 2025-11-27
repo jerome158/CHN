@@ -32,7 +32,7 @@ jobs:
           head -10 mig2.txt
         
         echo -e "\n=== 执行转换 ==="
-        python debug_converter.py mig2.txt channels.txt
+        python C.py mig2.txt channels.txt
         
         # 检查转换结果
         if [ -f "channels.txt" ]; then
