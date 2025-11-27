@@ -1,5 +1,4 @@
-
-name: Convert M3U to TXT
+name: Convert
 
 on:
   workflow_dispatch:  # 手动触发
@@ -38,11 +37,10 @@ jobs:
             output.append(f'{name} | {line}')
             name = ''
     
-    with open('mig3.txt', 'w', encoding='utf-8') as f:
+      with open('mig3.txt', 'w', encoding='utf-8') as f:
         f.write('\\n'.join(output))
-    
-    print(f'转换完成，共 {len(output)} 个频道'
-    "
+        print(f'转换完成，共 {len(output)} 个频道'
+"
 
 - name: Commit result
   run: |
