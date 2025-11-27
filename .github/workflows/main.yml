@@ -31,7 +31,56 @@ jobs:
       id: download
       run: |
         python GT.py
-    
+        
+    - name: Check if mig2.txt exists
+      id: check_file
+      run: |
+        if [ -f "mig2.txt" ]; then
+          echo "file_exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "file_exists=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Convert M3U to TXT
+      if: steps.check_file.outputs.file_exists == 'true'
+      run: |
+        echo "开始转换M3U格式到TXT格式..."
+        
+        # 创建输出文件
+        output_file="converted_channels.txt"
+        
+        # 处理M3U文件
+        line_number=0
+        channel_name=""
+        
+        while IFS= read -r line; do
+          ((line_number++))
+          
+          # 跳过空行和注释行
+          if [[ -z "$line" ]] || [[ "$line" == \#* ]]; then
+            continue
+          fi
+          
+          # 奇数行是频道信息，偶数行是URL
+          if (( line_number % 2 == 1 )); then
+            # 提取频道名称（去掉#EXTINF:后面的部分）
+            if [[ "$line" =~ EXTINF:-1,(.*) ]]; then
+              channel_name="${BASH_REMATCH[1]}"
+              # 清理频道名称中的特殊字符
+              channel_name=$(echo "$channel_name" | sed 's/[^a-zA-Z0-9 中文_-]//g')
+            fi
+          else
+            # 偶数行是URL，将频道名称和URL写入输出文件
+            if [[ -n "$channel_name" ]]; then
+              echo "$channel_name | $line" >> "$output_file"
+              channel_name=""
+            fi
+          fi
+        done < "mig2.txt"
+        
+        echo "转换完成！"
+
+
     - name: Commit and push if changes
       if: steps.download.outputs.changed == 'true'
       run: |
