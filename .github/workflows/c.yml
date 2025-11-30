@@ -3,8 +3,7 @@ name: Convert
 on:
   workflow_dispatch:
   push:
-    paths:
-      - 'mig2.txt'
+    branches: [ main ] 
 
 jobs:
   debug-convert:
