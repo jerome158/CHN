@@ -1,0 +1,91 @@
+name: Dynamic Password Generator
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # 每天UTC时间0点运行
+  workflow_dispatch:     # 允许手动触发
+
+jobs:
+  generate-password:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Create password generator script
+        run: |
+          cat > password_generator.py << 'EOF'
+          import datetime
+          import hashlib
+          
+          def generate_dynamic_password():
+              # 固定基准日期 2007年11月5日
+              base_date = datetime.datetime(2007, 11, 5)
+              # 当前日期
+              current_date = datetime.datetime.utcnow()
+              # 计算日期差值（天数）
+              date_diff = (current_date - base_date).days
+              
+              # 使用SHA-256哈希算法
+              hash_input = str(date_diff)
+              hash_object = hashlib.sha256(hash_input.encode())
+              hex_dig = hash_object.hexdigest()
+              
+              # 取哈希值中间6位数字
+              middle_index = len(hex_dig) // 2
+              password = hex_dig[middle_index-3:middle_index+3]
+              
+              # 确保是数字（提取数字字符）
+              digit_chars = [char for char in password if char.isdigit()]
+              while len(digit_chars) < 6:
+                  # 如果数字不足6位，补充更多数字
+                  additional_hash = hashlib.sha256((hash_input + str(len(digit_chars))).encode()).hexdigest()
+                  digit_chars.extend([char for char in additional_hash if char.isdigit()])
+              
+              final_password = ''.join(digit_chars[:6])
+              return final_password, date_diff, current_date.strftime("%Y-%m-%d")
+          
+          if __name__ == "__main__":
+              password, days_diff, date_str = generate_dynamic_password()
+              print(f"Generated Password: {password}")
+              print(f"Days since base date: {days_diff}")
+              print(f"Current date: {date_str}")
+              # 设置GitHub Actions输出
+              print(f"::set-output name=password::{password}")
+              print(f"::set-output name=days::{days_diff}")
+              print(f"::set-output name=date::{date_str}")
+          EOF
+
+      - name: Generate dynamic password
+        id: password_gen
+        run: |
+          python password_generator.py
+
+      - name: Display generated password
+        run: |
+          echo "Dynamic Password Generated:"
+          echo "Password: ${{ steps.password_gen.outputs.password }}"
+          echo "Days since bd: ${{ steps.password_gen.outputs.days }}"
+          echo "Generation Date: ${{ steps.password_gen.outputs.date }}"
+
+      - name: Create password output file
+        run: |
+          echo "# Dynamic Password" > DYPAS.txt
+          echo "Generated on: ${{ steps.password_gen.outputs.date }}" >> DYPAS.txt
+          echo "" >> DYNAMIC_PASSWORD.md
+          echo "**for today**: \`${{ steps.password_gen.outputs.password }}\`" >> DYPAS.txt
+          echo "" >> DYPAS.txt
+          echo "Days since base date : ${{ steps.password_gen.outputs.days }}" >> DYPAS.txt
+
+      - name: Commit and push password file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add DYNAMIC_PASSWORD.md
+          git commit -m "Update dynamic password for ${{ steps.password_gen.outputs.date }}" || exit 0
+          git push
