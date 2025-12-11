@@ -3,25 +3,24 @@ name: Dynamic
 on:
   schedule:
     - cron: '0 8 * * *'  # 每天UTC时间0点运行
-  workflow_dispatch:     # 允许手动触发
+  workflow_dispatch:
+  push:
+      branches: [ main ] 
 
 jobs:
-  generate-password:
+  debug-convert:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
           python-version: '3.x'
 
-      - name: Create password generator script
-        run: |
+    - name: Create password generator script
+      run: |
           cat > password_generator.py << 'EOF'
           import datetime
           import hashlib
@@ -64,20 +63,20 @@ jobs:
               print(f"::set-output name=date::{date_str}")
           EOF
 
-      - name: Generate dynamic password
-        id: password_gen
-        run: |
+    - name: Generate dynamic password
+      id: password_gen
+      run: |
           python password_generator.py
 
-      - name: Display generated password
-        run: |
+    - name: Display generated password
+      run: |
           echo "Dynamic Password Generated:"
           echo "Password: ${{ steps.password_gen.outputs.password }}"
           echo "Days since bd: ${{ steps.password_gen.outputs.days }}"
           echo "Generation Date: ${{ steps.password_gen.outputs.date }}"
 
-      - name: Create password output file
-        run: |
+    - name: Create password output file
+      run: |
           echo "# Dynamic Password" > DYPAS.txt
           echo "Generated on: ${{ steps.password_gen.outputs.date }}" >> DYPAS.txt
           echo "" >> DYNAMIC_PASSWORD.md
@@ -85,8 +84,8 @@ jobs:
           echo "" >> DYPAS.txt
           echo "Days since base date : ${{ steps.password_gen.outputs.days }}" >> DYPAS.txt
 
-      - name: Commit and push password file
-        run: |
+    - name: Commit and push password file
+      run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add DYPAS.txt
