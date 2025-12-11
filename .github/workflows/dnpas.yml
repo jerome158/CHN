@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -86,6 +89,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add DYNAMIC_PASSWORD.md
+          git add DYPAS.txt
           git commit -m "Update dynamic password for ${{ steps.password_gen.outputs.date }}" || exit 0
           git push
