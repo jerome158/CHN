@@ -1,50 +1,25 @@
-name: Compress
-
+name: Compress and Commit
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch:
-
 jobs:
-  convert-file:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
         
-      - name: Create output directory if not exists
-        run: |
-          mkdir -p output
-          
-      - name: Check if htsrc.txt exists
-        run: |
-          if [ ! -f "htsrc.txt" ]; then
-            echo "Warning: htsrc.txt not found, creating sample file"
-          fi
-          
-      - name: Convert htsrc.txt to htsrc.gz
-        run: |
-          echo "Converting htsrc.txt to htsrc.gz format"
-          cat htsrc.txt | gzip > htsrc.gz
-          echo "Conversion completed successfully"
-          
-      - name: Verify converted file
-        run: |
-          echo "Verifying converted file:"
-          echo "File size: $(stat -c%s output/chanels.gz) bytes"
-          echo "Content preview (first 10 lines):"
-          gzip -dc htsrc.gz | head -n 10
-          echo "Total lines in original file: $(cat output/userresult.txt | wc -l)"
-          echo "Total lines in converted file: $(gzip -dc output/chanels.gz | wc -l)"
-        
-          
-      - name: Commit and push chanels.gz (optional)
-        run: |
+    - name: Compress file
+      run: gzip htsrc.txt
+
+    - name: Configure Git
+      run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+    - name: Commit changes
+      run: |
           git add htsrc.gz
-          git commit -m "Convert userresult.txt to chanels.gz format" || echo "No changes to commit"
+          git commit -m "Convert htsrc.txt to htsrc.gz format" || echo "No changes to commit"
           git push
