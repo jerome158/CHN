@@ -1,4 +1,4 @@
-name: Compress and Commit
+name: gzip
 on:
   push:
     branches: [ main ]
