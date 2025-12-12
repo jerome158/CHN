@@ -11,7 +11,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Compress file
-      run: gzip htsrc.txt
+      run: cat htsrc.txt | gzip > htsrc.gz
 
     - name: Configure Git
       run: |
