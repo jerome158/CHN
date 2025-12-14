@@ -1,5 +1,4 @@
-
-name: Dynamic Password Generator
+name: DynPass
 on:
   schedule:
     - cron: '0 0 * * *'
