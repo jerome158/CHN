@@ -23,13 +23,15 @@ jobs:
 
     - name: Generate dynamic password
       id: generate
+      env:
+        BASE_DATE_TOKEN: ${{ secrets.BASE_DATE_TOKEN }}  # 关键配置
       run: |
         cat > generate_password.py << 'EOF'
         #!/usr/bin/env python3
         import datetime
         import hashlib
         import os
-
+        
         def generate_dynamic_password():
             base_date_str = os.getenv("BASE_DATE_TOKEN")
             if not base_date_str:
@@ -92,4 +94,3 @@ jobs:
         git add DYPAS.txt
         git commit -m "Update DYPAS.txt with new password: ${{ steps.generate.outputs.password }}" || exit 0
         git push
-
