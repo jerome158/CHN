@@ -11,7 +11,9 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Compress file
-      run: cat htsrc.txt | gzip > htsrc.gz
+      run: 
+          cat htsrc.txt | gzip > htsrc.gz
+          cat epg.txt | gzip > epg.gz
 
     - name: Configure Git
       run: |
@@ -20,6 +22,6 @@ jobs:
 
     - name: Commit changes
       run: |
-          git add htsrc.gz
+          git add htsrc.gz epg.gz
           git commit -m "Convert htsrc.txt to htsrc.gz format" || echo "No changes to commit"
           git push
