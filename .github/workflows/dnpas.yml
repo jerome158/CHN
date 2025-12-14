@@ -51,8 +51,7 @@ jobs:
             password = hex_dig[middle_index-3:middle_index+3]
             
             digit_chars = [char for char in password if char.isdigit()]
-            
-            # 多次哈希补偿机制
+
             attempts = 0
             while len(digit_chars) < 6 and attempts < 10:
                 additional_hash = hashlib.sha256((hash_input + str(len(digit_chars)) + str(attempts)).encode()).hexdigest()
@@ -102,9 +101,7 @@ jobs:
         | $DATE | $PASSWORD |
         
         ## System Information
-        - Generated on: $DATE
-        - Algorithm: SHA-256 with multi-hash compensation
-        - Base Date: 2007-11-05
+        
         EOF
 
     - name: Commit and push
