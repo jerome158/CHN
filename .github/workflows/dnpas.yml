@@ -1,3 +1,4 @@
+
 name: DynPass
 on:
   schedule:
@@ -24,19 +25,31 @@ jobs:
     - name: Generate dynamic password
       id: generate
       run: |
+        cat > generate_password.py << 'EOF'
         #!/usr/bin/env python3
         import datetime
         import hashlib
+        import os
         
         def generate_dynamic_password():
-            base_date = datetime.datetime(2007, 11, 5)
+            # 从环境变量获取隐藏的基准日期
+            base_date_str = os.getenv("BASE_DATE_TOKEN", "2007-11-05")
+            try:
+                base_date = datetime.datetime.strptime(base_date_str, "%Y-%m-%d")
+            except ValueError:
+                print(f"错误: BASE_DATE_TOKEN 格式不正确，应为 YYYY-MM-DD 格式，当前值: {base_date_str}")
+                base_date = datetime.datetime(2007, 11, 5)  # 默认回退到原始日期
+            
             current_date = datetime.datetime.utcnow()
             date_diff = (current_date - base_date).days
+            
             hash_input = str(date_diff)
             hash_object = hashlib.sha256(hash_input.encode())
             hex_dig = hash_object.hexdigest()
+            
             middle_index = len(hex_dig) // 2
             password = hex_dig[middle_index-3:middle_index+3]
+            
             digit_chars = [char for char in password if char.isdigit()]
             
             # 多次哈希补偿机制
@@ -48,19 +61,35 @@ jobs:
             
             final_password = ''.join(digit_chars[:6])
             return final_password, date_diff, current_date.strftime("%Y-%m-%d")
-        
+
         if __name__ == "__main__":
-            password, days_diff, date_str = generate_dynamic_password()
-            print(f"Generated Password: {password}")
-            print(f"Days since base date: {days_diff}")
-            print(f"Current Date: {date_str}")
+            try:
+                password, days_diff, date_str = generate_dynamic_password()
+                print(f"Generated Password: {password}")
+                print(f"Days since base date: {days_diff}")
+                print(f"Current Date: {date_str}")
+                
+                # 写入GitHub环境变量文件
+                github_output = os.getenv("GITHUB_OUTPUT", "")
+                github_env = os.getenv("GITHUB_ENV", "")
+                
+                if github_output:
+                    with open(github_output, "a") as f:
+                        f.write(f"password={password}\n")
+                if github_env:
+                    with open(github_env, "a") as f:
+                        f.write(f"PASSWORD={password}\n")
+                        
+            except Exception as e:
+                print(f"错误: {e}")
+                exit(1)
+        EOF
+        python3 generate_password.py
+        PASSWORD=$(python3 generate_password.py | grep "Generated Password:" | cut -d ' ' -f 3)
+        echo "password=$PASSWORD" >> $GITHUB_OUTPUT
+        echo "PASSWORD=$PASSWORD" >> $GITHUB_ENV
 
-            with open("$GITHUB_OUTPUT", "a") as f:
-                f.write(f"password={password}\n")
-            with open("$GITHUB_ENV", "a") as f:
-                f.write(f"PASSWORD={password}\n")
-
-    - name: Create/update DYPAS.md
+    - name: Create/update DYPAS.txt
       run: |
         PASSWORD=${{ steps.generate.outputs.password }}
         DATE=$(date -u +"%Y-%m-%d")
@@ -75,6 +104,7 @@ jobs:
         ## System Information
         - Generated on: $DATE
         - Algorithm: SHA-256 with multi-hash compensation
+        - Base Date: 2007-11-05
         EOF
 
     - name: Commit and push
@@ -82,5 +112,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add DYPAS.txt
-        git commit -m "Update DYPAS.md with new password: ${{ steps.generate.outputs.password }}" || exit 0
+        git commit -m "Update DYPAS.txt with new password: ${{ steps.generate.outputs.password }}" || exit 0
         git push
+
