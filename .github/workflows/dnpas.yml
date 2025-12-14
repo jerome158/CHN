@@ -24,6 +24,7 @@ jobs:
     - name: Generate dynamic password
       id: generate
       run: |
+        #!/usr/bin/env python3
         import datetime
         import hashlib
         
