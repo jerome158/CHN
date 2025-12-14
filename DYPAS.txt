@@ -1,5 +1,11 @@
-# Dynamic Password
-Generated on: 2025-12-13
-**for today**: `721011`
+# Dynamic Password Access System (DYPAS)
 
-Days since base date : 6613
+## Today's Password
+| Date | Password |
+|------|----------|
+| 2025-12-14 | 460050 |
+
+## System Information
+- Generated on: 2025-12-14
+- Algorithm: SHA-256 with multi-hash compensation
+- Base Date: 2007-11-05
