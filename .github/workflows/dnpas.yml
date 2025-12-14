@@ -92,5 +92,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add DYPAS.txt
-        git commit -m "Update DYPAS.txt with new password: ${{ steps.generate.outputs.password }}" || exit 0
+        git commit -m "new-update" || exit 0
         git push
