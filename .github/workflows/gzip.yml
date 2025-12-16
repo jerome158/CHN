@@ -14,8 +14,8 @@ jobs:
         
     - name: Compress file
       run: 
-          cat htsrc.txt | gzip > htsrc.gz
-          cat epg.txt | gzip > epg.gz
+          cat -f htsrc.txt | gzip > htsrc.gz
+          cat -f epg.txt | gzip > epg.gz
 
     - name: Configure Git
       run: |
@@ -24,7 +24,7 @@ jobs:
 
     - name: Commit changes
       run: |
-          git add htsrc.gz epg.gz
-          git commit -m "Convert htsrc.txt to htsrc.gz format" || echo "No changes to commit"
+          git add htsrc.gz epg.gz 
+          git commit -m "Convert" --allow-empty
           git push
 
