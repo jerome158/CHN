@@ -1,3 +1,4 @@
+
 name: gzip
 on:
   push:
@@ -11,20 +12,27 @@ jobs:
     - uses: actions/checkout@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        
+        fetch-depth: 0  # 获取完整历史
+
     - name: Compress file
-      run: 
-          cat htsrc.txt | gzip > htsrc.gz
-          cat epg.txt | gzip > epg.gz
+      run: |
+        cat htsrc.txt | gzip > htsrc.gz
+        cat epg.txt | gzip > epg.gz
+
+    - name: Verify compression
+      run: |
+        gzip -t htsrc.gz
+        gzip -t epg.gz
 
     - name: Configure Git
       run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
 
     - name: Commit changes
       run: |
-          git add htsrc.gz epg.gz 
-          git commit -m "Convert" --allow-empty
-          git push
+        git add htsrc.gz epg.gz 
+        git commit -m "Convert" --allow-empty
+        git push
+
 
