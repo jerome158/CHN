@@ -25,3 +25,4 @@ jobs:
           git add htsrc.gz epg.gz
           git commit -m "Convert htsrc.txt to htsrc.gz format" || echo "No changes to commit"
           git push
+
