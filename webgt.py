@@ -66,7 +66,7 @@ def extract_urls_from_cell(cell, base_url):
 def main():
     target_url = 'https://www.wmviv.com/bingchatv.html'
     output_file = 'webgt.txt'
-        print(f"开始抓取直播频道列表: {target_url}")
+    print(f"开始抓取直播频道列表: {target_url}")
     
     try:
         # 设置请求头模拟浏览器访问
