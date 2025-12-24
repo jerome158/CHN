@@ -26,3 +26,14 @@ jobs:
 
     - name: Run channel fetcher script
       run: python webgt.py
+
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Commit changes
+      run: |
+        git add
+        git commit -m "Convert" --allow-empty
+        git push
