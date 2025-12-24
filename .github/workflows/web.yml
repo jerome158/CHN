@@ -2,17 +2,14 @@
 name: webgt
 
 on:
-  schedule:
-    # 每6小时运行一次
-    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      http_proxy: http://223.116.184.210:8089
-      https_proxy: http://120.197.219.82:9091
+      http_proxy: 
+      https_proxy: 
     steps:
     - uses: actions/checkout@v2
       with:
