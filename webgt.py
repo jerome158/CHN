@@ -1,10 +1,23 @@
-
 import requests
+import os
 import sys
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 import time
 import re
+
+def get_proxy_from_env():
+    """从环境变量获取代理配置"""
+    http_proxy = os.environ.get('http_proxy')
+    https_proxy = os.environ.get('https_proxy')
+    
+    proxies = {}
+    if http_proxy:
+        proxies['http'] = http_proxy.strip()
+    if https_proxy:
+        proxies['https'] = https_proxy.strip()
+    
+    return proxies if proxies else None
 
 def clean_url(url, base_url):
     """清理和规范化URL"""
@@ -44,7 +57,7 @@ def extract_urls_from_cell(cell, base_url):
         if script.string:
             # 使用正则表达式查找各种协议的URL
             url_patterns = re.findall(
-                r'(?:https?|rtmp|rtsp|mms|udp)://[^\s"\';<>\)]+', 
+                r'(?:https?|rtmp|rtsp|mms|udp)://[^\\s\"\\';<>\\)]+', 
                 script.string
             )
             for pattern_url in url_patterns:
@@ -55,7 +68,7 @@ def extract_urls_from_cell(cell, base_url):
     # 方法3: 直接从文本内容中提取URL
     raw_text = cell.get_text(separator=' ', strip=True)
     # 分割文本并检查每部分是否为URL
-    for part in re.split(r'\s+', raw_text):
+    for part in re.split(r'\\s+', raw_text):
         cleaned = clean_url(part, base_url)
         if cleaned:
             urls.append(cleaned)
@@ -68,19 +81,31 @@ def main():
     output_file = 'webgt.txt'
     print(f"开始抓取直播频道列表: {target_url}")
     
+    # 获取代理配置
+    proxies = get_proxy_from_env()
+    if proxies:
+        print(f"使用代理: {proxies}")
+    else:
+        print("未检测到代理配置，将使用直连方式访问")
+    
     try:
         # 设置请求头模拟浏览器访问
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Encoding': 'gzip',
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1',
         }
         
-        # 发送HTTP GET请求
-        response = requests.get(target_url, headers=headers, timeout=30)
+        # 发送HTTP GET请求（关键修改：添加proxies参数）
+        if proxies:
+            response = requests.get(target_url, headers=headers, 
+                                    proxies=proxies, timeout=30, verify=False)
+        else:
+            response = requests.get(target_url, headers=headers, 
+                                    timeout=30, verify=False)
         response.raise_for_status()
         
     except requests.RequestException as e:
