@@ -11,8 +11,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      http_proxy: 223.116.184.210:8089
-      https_proxy: 120.197.219.82:9091
+      http_proxy: http://223.116.184.210:8089
+      https_proxy: http://120.197.219.82:9091
     steps:
     - uses: actions/checkout@v2
       with:
