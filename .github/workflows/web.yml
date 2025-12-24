@@ -28,13 +28,10 @@ jobs:
     - name: Run channel fetcher script
       run: python webgt.py
 
-    - name: Configure Git
+    - name: Commit and push
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-
-    - name: Commit changes
-      run: |
-        git add
-        git commit -m "Convert" --allow-empty
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add webgt.txt
+        git commit -m "自动更新: 直播频道数据 [skip ci]"
         git push
