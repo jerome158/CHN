@@ -349,8 +349,218 @@ https://mgev.188766.xyz/?migutoken=14a00ae5cd8db8f3ae62b39a3544da47&id=hk_hoy&ty
 
 
 
-#EXTINF:-1 tvg-id="订阅地址的密码不正确_已隐藏" tvg-name="订阅地址的密码不正确_已隐藏"" tvg-logo="https://static.188766.xyz/logo/sln654360/itv/logo/免费分享.png" group-title="冰茶体育",订阅地址的密码不正确_已隐藏
-https://188766.xyz/dong
+#EXTINF:-1 tvg-id="睛彩竞技" tvg-name="睛彩竞技" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/晴彩竞技.png" group-title="咪视界ys",睛彩竞技-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011528&token=2189c71d2189c71d2189c71d2189c71d&client=ys
+#EXTINF:-1 tvg-id="睛彩篮球" tvg-name="睛彩篮球" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/晴彩竞技.png" group-title="咪视界ys",睛彩篮球-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011529&token=2189c71e2189c71e2189c71e2189c71e&client=ys
+#EXTINF:-1 tvg-id="睛彩青少" tvg-name="睛彩青少" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/睛彩青少.png" group-title="咪视界ys",睛彩青少-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011525&token=2189c71a2189c71a2189c71a2189c71a&client=ys
+#EXTINF:-1 tvg-id="睛彩广场舞" tvg-name="睛彩广场舞" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/睛彩广场舞.png" group-title="咪视界ys",睛彩广场舞-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011523&token=2189c7182189c7182189c7182189c718&client=ys
+#EXTINF:-1 tvg-id="咪视界4k-1" tvg-name="咪视界4k-1" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界ys",咪视界4K-1-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000005180&token=8c98c0058c98c0058c98c0058c98c005&client=ys
+#EXTINF:-1 tvg-id="咪视界4k-2" tvg-name="咪视界4k-2" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界ys",咪视界4K-2-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000015686&token=8ca6ea518ca6ea518ca6ea518ca6ea51&client=ys
+#EXTINF:-1 tvg-id="咪视界-1" tvg-name="咪视界-1" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-1-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000005308&token=ebfd84f5ebfd84f5ebfd84f5ebfd84f5&client=ys
+#EXTINF:-1 tvg-id="咪视界-2" tvg-name="咪视界-2" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-2-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000005969&token=ebfd9c36ebfd9c36ebfd9c36ebfd9c36&client=ys
+#EXTINF:-1 tvg-id="咪视界-3" tvg-name="咪视界-3" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-3-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000007218&token=ebfe6a11ebfe6a11ebfe6a11ebfe6a11&client=ys
+#EXTINF:-1 tvg-id="咪视界-4" tvg-name="咪视界-4" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-4-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000008001&token=ebfed6c8ebfed6c8ebfed6c8ebfed6c8&client=ys
+#EXTINF:-1 tvg-id="咪视界-5" tvg-name="咪视界-5" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-5-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000008176&token=ebfedb67ebfedb67ebfedb67ebfedb67&client=ys
+#EXTINF:-1 tvg-id="咪视界-6" tvg-name="咪视界-6" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-6-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000008379&token=ebfee2ecebfee2ecebfee2ecebfee2ec&client=ys
+#EXTINF:-1 tvg-id="咪视界-7" tvg-name="咪视界-7" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-7-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000010129&token=ec094f58ec094f58ec094f58ec094f58&client=ys
+#EXTINF:-1 tvg-id="咪视界-8" tvg-name="咪视界-8" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-8-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000010948&token=ec096d9dec096d9dec096d9dec096d9d&client=ys
+#EXTINF:-1 tvg-id="咪视界-9" tvg-name="咪视界-9" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-9-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000028638&token=ec1b1cb4ec1b1cb4ec1b1cb4ec1b1cb4&client=ys
+#EXTINF:-1 tvg-id="咪视界-10" tvg-name="咪视界-10" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-10-移动或影视专用
+https://msj.188766.xyz/play?id=3000000001000031494&token=ec25fed0ec25fed0ec25fed0ec25fed0&client=ys
+#EXTINF:-1 tvg-id="咪视界-11" tvg-name="咪视界-11" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-11-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000000097&token=8c96768f8c96768f8c96768f8c96768f&client=ys
+#EXTINF:-1 tvg-id="咪视界-12" tvg-name="咪视界-12" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-12-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000002019&token=8c975e578c975e578c975e578c975e57&client=ys
+#EXTINF:-1 tvg-id="咪视界-13" tvg-name="咪视界-13" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-13-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000002809&token=8c977c408c977c408c977c408c977c40&client=ys
+#EXTINF:-1 tvg-id="咪视界-14" tvg-name="咪视界-14" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-14-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000003915&token=8c97f47b8c97f47b8c97f47b8c97f47b&client=ys
+#EXTINF:-1 tvg-id="咪视界-15" tvg-name="咪视界-15" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-15-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000004193&token=8c984bc88c984bc88c984bc88c984bc8&client=ys
+#EXTINF:-1 tvg-id="咪视界-16" tvg-name="咪视界-16" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-16-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000005837&token=8c98d9b88c98d9b88c98d9b88c98d9b8&client=ys
+#EXTINF:-1 tvg-id="咪视界-17" tvg-name="咪视界-17" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-17-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000006077&token=8c99308b8c99308b8c99308b8c99308b&client=ys
+#EXTINF:-1 tvg-id="咪视界-18" tvg-name="咪视界-18" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-18-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000006658&token=8c9946d48c9946d48c9946d48c9946d4&client=ys
+#EXTINF:-1 tvg-id="咪视界-19" tvg-name="咪视界-19" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-19-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000009788&token=8c9aa80f8c9aa80f8c9aa80f8c9aa80f&client=ys
+#EXTINF:-1 tvg-id="咪视界-20" tvg-name="咪视界-20" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-20-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000010833&token=8ca4ab5a8ca4ab5a8ca4ab5a8ca4ab5a&client=ys
+#EXTINF:-1 tvg-id="咪视界-21" tvg-name="咪视界-21" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-21-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000011297&token=8ca509f18ca509f18ca509f18ca509f1&client=ys
+#EXTINF:-1 tvg-id="咪视界-22" tvg-name="咪视界-22" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-22-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000011518&token=8ca5143d8ca5143d8ca5143d8ca5143d&client=ys
+#EXTINF:-1 tvg-id="咪视界-23" tvg-name="咪视界-23" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-23-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000012558&token=8ca589188ca589188ca589188ca58918&client=ys
+#EXTINF:-1 tvg-id="咪视界-24" tvg-name="咪视界-24" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-24-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000012616&token=8ca58c5b8ca58c5b8ca58c5b8ca58c5b&client=ys
+#EXTINF:-1 tvg-id="咪视界-25" tvg-name="咪视界-25" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-25-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000015470&token=8ca6e2aa8ca6e2aa8ca6e2aa8ca6e2aa&client=ys
+#EXTINF:-1 tvg-id="咪视界-26" tvg-name="咪视界-26" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-26-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000015560&token=8ca6e64c8ca6e64c8ca6e64c8ca6e64c&client=ys
+#EXTINF:-1 tvg-id="咪视界-27" tvg-name="咪视界-27" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-27-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000017678&token=8ca7d2f28ca7d2f28ca7d2f28ca7d2f2&client=ys
+#EXTINF:-1 tvg-id="咪视界-28" tvg-name="咪视界-28" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-28-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000019839&token=8ca8c2b78ca8c2b78ca8c2b78ca8c2b7&client=ys
+#EXTINF:-1 tvg-id="咪视界-29" tvg-name="咪视界-29" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-29-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000021904&token=8cb33a9f8cb33a9f8cb33a9f8cb33a9f&client=ys
+#EXTINF:-1 tvg-id="咪视界-30" tvg-name="咪视界-30" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-30-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000023434&token=8cb410f58cb410f58cb410f58cb410f5&client=ys
+#EXTINF:-1 tvg-id="咪视界-31" tvg-name="咪视界-31" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-31-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000025380&token=8cb4f6898cb4f6898cb4f6898cb4f689&client=ys
+#EXTINF:-1 tvg-id="咪视界-32" tvg-name="咪视界-32" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-32-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000027691&token=8cb5eaaa8cb5eaaa8cb5eaaa8cb5eaaa&client=ys
+#EXTINF:-1 tvg-id="咪视界-33" tvg-name="咪视界-33" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-33-移动或影视专用
+https://msj.188766.xyz/play?id=3000000010000031669&token=8cc1479c8cc1479c8cc1479c8cc1479c&client=ys
+#EXTINF:-1 tvg-id="咪视界-34" tvg-name="咪视界-34" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-34-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011518&token=2189c6fe2189c6fe2189c6fe2189c6fe&client=ys
+#EXTINF:-1 tvg-id="咪视界-35" tvg-name="咪视界-35" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-35-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011519&token=2189c6ff2189c6ff2189c6ff2189c6ff&client=ys
+#EXTINF:-1 tvg-id="咪视界-36" tvg-name="咪视界-36" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-36-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011520&token=2189c7152189c7152189c7152189c715&client=ys
+#EXTINF:-1 tvg-id="咪视界-37" tvg-name="咪视界-37" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-37-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011521&token=2189c7162189c7162189c7162189c716&client=ys
+#EXTINF:-1 tvg-id="咪视界-38" tvg-name="咪视界-38" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界ys",咪视界-38-移动或影视专用
+https://msj.188766.xyz/play?id=3000000020000011522&token=2189c7172189c7172189c7172189c717&client=ys
+#EXTINF:-1 tvg-id="睛彩竞技" tvg-name="睛彩竞技" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/晴彩竞技.png" group-title="咪视界bc",睛彩竞技-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011528&token=2189c71d2189c71d2189c71d2189c71d
+#EXTINF:-1 tvg-id="睛彩篮球" tvg-name="睛彩篮球" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/晴彩竞技.png" group-title="咪视界bc",睛彩篮球-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011529&token=2189c71e2189c71e2189c71e2189c71e
+#EXTINF:-1 tvg-id="睛彩青少" tvg-name="睛彩青少" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/睛彩青少.png" group-title="咪视界bc",睛彩青少-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011525&token=2189c71a2189c71a2189c71a2189c71a
+#EXTINF:-1 tvg-id="睛彩广场舞" tvg-name="睛彩广场舞" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/睛彩广场舞.png" group-title="咪视界bc",睛彩广场舞-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011523&token=2189c7182189c7182189c7182189c718
+#EXTINF:-1 tvg-id="咪视界4k-1" tvg-name="咪视界4k-1" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界bc",咪视界4K-1-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000005180&token=8c98c0058c98c0058c98c0058c98c005
+#EXTINF:-1 tvg-id="咪视界4k-2" tvg-name="咪视界4k-2" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界4K.png" group-title="咪视界bc",咪视界4K-2-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000015686&token=8ca6ea518ca6ea518ca6ea518ca6ea51
+#EXTINF:-1 tvg-id="咪视界-1" tvg-name="咪视界-1" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-1-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000005308&token=ebfd84f5ebfd84f5ebfd84f5ebfd84f5
+#EXTINF:-1 tvg-id="咪视界-2" tvg-name="咪视界-2" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-2-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000005969&token=ebfd9c36ebfd9c36ebfd9c36ebfd9c36
+#EXTINF:-1 tvg-id="咪视界-3" tvg-name="咪视界-3" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-3-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000007218&token=ebfe6a11ebfe6a11ebfe6a11ebfe6a11
+#EXTINF:-1 tvg-id="咪视界-4" tvg-name="咪视界-4" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-4-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000008001&token=ebfed6c8ebfed6c8ebfed6c8ebfed6c8
+#EXTINF:-1 tvg-id="咪视界-5" tvg-name="咪视界-5" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-5-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000008176&token=ebfedb67ebfedb67ebfedb67ebfedb67
+#EXTINF:-1 tvg-id="咪视界-6" tvg-name="咪视界-6" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-6-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000008379&token=ebfee2ecebfee2ecebfee2ecebfee2ec
+#EXTINF:-1 tvg-id="咪视界-7" tvg-name="咪视界-7" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-7-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000010129&token=ec094f58ec094f58ec094f58ec094f58
+#EXTINF:-1 tvg-id="咪视界-8" tvg-name="咪视界-8" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-8-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000010948&token=ec096d9dec096d9dec096d9dec096d9d
+#EXTINF:-1 tvg-id="咪视界-9" tvg-name="咪视界-9" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-9-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000028638&token=ec1b1cb4ec1b1cb4ec1b1cb4ec1b1cb4
+#EXTINF:-1 tvg-id="咪视界-10" tvg-name="咪视界-10" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-10-冰茶专用
+https://msj.188766.xyz/play?id=3000000001000031494&token=ec25fed0ec25fed0ec25fed0ec25fed0
+#EXTINF:-1 tvg-id="咪视界-11" tvg-name="咪视界-11" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-11-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000000097&token=8c96768f8c96768f8c96768f8c96768f
+#EXTINF:-1 tvg-id="咪视界-12" tvg-name="咪视界-12" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-12-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000002019&token=8c975e578c975e578c975e578c975e57
+#EXTINF:-1 tvg-id="咪视界-13" tvg-name="咪视界-13" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-13-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000002809&token=8c977c408c977c408c977c408c977c40
+#EXTINF:-1 tvg-id="咪视界-14" tvg-name="咪视界-14" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-14-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000003915&token=8c97f47b8c97f47b8c97f47b8c97f47b
+#EXTINF:-1 tvg-id="咪视界-15" tvg-name="咪视界-15" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-15-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000004193&token=8c984bc88c984bc88c984bc88c984bc8
+#EXTINF:-1 tvg-id="咪视界-16" tvg-name="咪视界-16" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-16-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000005837&token=8c98d9b88c98d9b88c98d9b88c98d9b8
+#EXTINF:-1 tvg-id="咪视界-17" tvg-name="咪视界-17" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-17-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000006077&token=8c99308b8c99308b8c99308b8c99308b
+#EXTINF:-1 tvg-id="咪视界-18" tvg-name="咪视界-18" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-18-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000006658&token=8c9946d48c9946d48c9946d48c9946d4
+#EXTINF:-1 tvg-id="咪视界-19" tvg-name="咪视界-19" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-19-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000009788&token=8c9aa80f8c9aa80f8c9aa80f8c9aa80f
+#EXTINF:-1 tvg-id="咪视界-20" tvg-name="咪视界-20" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-20-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000010833&token=8ca4ab5a8ca4ab5a8ca4ab5a8ca4ab5a
+#EXTINF:-1 tvg-id="咪视界-21" tvg-name="咪视界-21" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-21-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000011297&token=8ca509f18ca509f18ca509f18ca509f1
+#EXTINF:-1 tvg-id="咪视界-22" tvg-name="咪视界-22" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-22-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000011518&token=8ca5143d8ca5143d8ca5143d8ca5143d
+#EXTINF:-1 tvg-id="咪视界-23" tvg-name="咪视界-23" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-23-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000012558&token=8ca589188ca589188ca589188ca58918
+#EXTINF:-1 tvg-id="咪视界-24" tvg-name="咪视界-24" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-24-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000012616&token=8ca58c5b8ca58c5b8ca58c5b8ca58c5b
+#EXTINF:-1 tvg-id="咪视界-25" tvg-name="咪视界-25" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-25-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000015470&token=8ca6e2aa8ca6e2aa8ca6e2aa8ca6e2aa
+#EXTINF:-1 tvg-id="咪视界-26" tvg-name="咪视界-26" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-26-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000015560&token=8ca6e64c8ca6e64c8ca6e64c8ca6e64c
+#EXTINF:-1 tvg-id="咪视界-27" tvg-name="咪视界-27" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-27-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000017678&token=8ca7d2f28ca7d2f28ca7d2f28ca7d2f2
+#EXTINF:-1 tvg-id="咪视界-28" tvg-name="咪视界-28" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-28-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000019839&token=8ca8c2b78ca8c2b78ca8c2b78ca8c2b7
+#EXTINF:-1 tvg-id="咪视界-29" tvg-name="咪视界-29" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-29-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000021904&token=8cb33a9f8cb33a9f8cb33a9f8cb33a9f
+#EXTINF:-1 tvg-id="咪视界-30" tvg-name="咪视界-30" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-30-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000023434&token=8cb410f58cb410f58cb410f58cb410f5
+#EXTINF:-1 tvg-id="咪视界-31" tvg-name="咪视界-31" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-31-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000025380&token=8cb4f6898cb4f6898cb4f6898cb4f689
+#EXTINF:-1 tvg-id="咪视界-32" tvg-name="咪视界-32" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-32-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000027691&token=8cb5eaaa8cb5eaaa8cb5eaaa8cb5eaaa
+#EXTINF:-1 tvg-id="咪视界-33" tvg-name="咪视界-33" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-33-冰茶专用
+https://msj.188766.xyz/play?id=3000000010000031669&token=8cc1479c8cc1479c8cc1479c8cc1479c
+#EXTINF:-1 tvg-id="咪视界-34" tvg-name="咪视界-34" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-34-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011518&token=2189c6fe2189c6fe2189c6fe2189c6fe
+#EXTINF:-1 tvg-id="咪视界-35" tvg-name="咪视界-35" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-35-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011519&token=2189c6ff2189c6ff2189c6ff2189c6ff
+#EXTINF:-1 tvg-id="咪视界-36" tvg-name="咪视界-36" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-36-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011520&token=2189c7152189c7152189c7152189c715
+#EXTINF:-1 tvg-id="咪视界-37" tvg-name="咪视界-37" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-37-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011521&token=2189c7162189c7162189c7162189c716
+#EXTINF:-1 tvg-id="咪视界-38" tvg-name="咪视界-38" tvg-logo="https://static.188766.xyz/logo/sparkssssssssss/epg/logo/咪视界.png" group-title="咪视界bc",咪视界-38-冰茶专用
+https://msj.188766.xyz/play?id=3000000020000011522&token=2189c7172189c7172189c7172189c717
+#EXTINF:-1 tvg-id="TNT Sports 1 HD" tvg-name="TNT Sports 1" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-1.png" group-title="英语体育",TNT Sports 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=TNT-Sports-1&token=a46a469aa46a469aa46a469aa46a469a
+#EXTINF:-1 tvg-id="TNT Sports 2 HD" tvg-name="TNT Sports 2" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-2.png" group-title="英语体育",TNT Sports 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=TNT-Sports-2&token=a46a469ba46a469ba46a469ba46a469b
+#EXTINF:-1 tvg-id="TNT Sports 3 HD" tvg-name="TNT Sports 3" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-3.png" group-title="英语体育",TNT Sports 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=TNT-Sports-3&token=a46a469ca46a469ca46a469ca46a469c
+#EXTINF:-1 tvg-id="TNT Sports 4 HD" tvg-name="TNT Sports 4" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/TNT-Sports-4.png" group-title="英语体育",TNT Sports 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=TNT-Sports-4&token=a46a469da46a469da46a469da46a469d
+#EXTINF:-1 tvg-id="SkySpMainEv" tvg-name="Sky Sports Main Event" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Main-Event.png" group-title="英语体育",Sky Sports Main Event
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=Sky-Sports-Main-Event&token=335bdd64335bdd64335bdd64335bdd64
+#EXTINF:-1 tvg-id="SkySp PL" tvg-name="Sky Sports Premier League" http-referer="Origin: https://new-player.snapx.cfd/" tvg-logo="https://static.188766.xyz/logo/sln162/iptv-back/logo/Sky-Sports-Premier-League.png" group-title="英语体育",Sky Sports Premier League
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+#EXTVLCOPT:http-referer=Origin: https://new-player.snapx.cfd/
+#EXTVLCOPT:referer=Origin: https://new-player.snapx.cfd/
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=Origin: https://new-player.snapx.cfd/
+https://bee.188766.xyz/bee?id=beesport&pid=Sky-Sports-Premier-League&token=63804bce63804bce63804bce63804bce
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://static.188766.xyz/logo/fanmingming/live/tv/湖南卫视.png" group-title="卫视频道",湖南卫视
 http://iptv.huuc.edu.cn/hls/hunanhd.m3u8
 #EXTINF:-1 tvg-id="免费分享_用爱发电_拒绝贩卖_只有TG群" tvg-name="免费分享_用爱发电_拒绝贩卖_只有TG群" tvg-logo="https://static.188766.xyz/logo/sln654360/itv/logo/免费分享.png" group-title="🎀冰茶公告",免费分享_用爱发电_拒绝贩卖_只有TG群
