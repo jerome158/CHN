@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { gzipSync } from 'zlib';
 
@@ -9,8 +9,8 @@ const gzOutputPath = resolve('./chanels.gz');
 
 // 标准化频道名称，用于匹配
 function normalizeChannelName(name) {
-    // 处理 CCTV 频道（支持 CCTV1、CCTV1+、CCTV1综合 等格式）
-    const cctvMatch = name.match(/^CCTV(\d+[+]?)/);
+    // 处理 CCTV 频道（支持 CCTV1、CCTV1+、CCTV1综合、CCTV-1 等格式）
+    const cctvMatch = name.match(/^CCTV[-]?(\d+[+]?)/);
     if (cctvMatch) {
         return `CCTV-${cctvMatch[1]}`;
     }
@@ -67,7 +67,14 @@ function buildM3U(header, channels) {
     const lines = [...header];
 
     for (const channel of channels) {
-        lines.push(channel.extinf);
+        let extinf = channel.extinf;
+        
+        if (channel.nameKey && channel.nameKey.startsWith('CCTV-')) {
+            const normalizedName = channel.nameKey;
+            extinf = extinf.replace(/,[^,\n]+$/, `,${normalizedName}`);
+        }
+        
+        lines.push(extinf);
         lines.push(channel.url);
     }
 
@@ -84,13 +91,28 @@ async function fetchContent(url) {
 
 async function main() {
     try {
+        console.log('=== 开始处理 ===');
+        console.log('HD 仓库路径:', hdRepoPath);
+        console.log('M3U 输出路径:', m3uOutputPath);
+        console.log('GZ 输出路径:', gzOutputPath);
+
+        if (!existsSync(hdRepoPath)) {
+            console.error('✗ HD 仓库文件不存在:', hdRepoPath);
+            console.log('当前目录文件列表:');
+            console.log(readdirSync('./'));
+            process.exit(1);
+        }
+
+        console.log('✓ HD 仓库文件存在');
         console.log('读取 HD 仓库文件...');
         const hdContent = readFileSync(hdRepoPath, 'utf-8');
         const hdData = parseM3U(hdContent);
+        console.log(`✓ HD 仓库读取完成，共 ${hdData.channels.length} 个频道`);
 
         console.log('读取 mivgo.m3u 文件...');
         const mivgoContent = await fetchContent(mivgoUrl);
         const mivgoData = parseM3U(mivgoContent);
+        console.log(`✓ mivgo 读取完成，共 ${mivgoData.channels.length} 个频道`);
 
         const mivgoCCTVChannels = mivgoData.channels
             .filter(ch => ch.group === '央视频道')
@@ -155,17 +177,23 @@ async function main() {
 
         console.log(`✓ 匹配并在前面添加了 ${matchCount} 个频道的 mivgo 源`);
 
+        console.log('生成 M3U 文件...');
         const outputContent = buildM3U(hdData.header, newChannels);
         writeFileSync(m3uOutputPath, outputContent, 'utf-8');
+        console.log('✓ M3U 文件已生成:', m3uOutputPath);
 
+        console.log('生成 GZ 压缩文件...');
         const gzippedContent = gzipSync(outputContent, { level: 9 });
         writeFileSync(gzOutputPath, gzippedContent);
+        console.log('✓ GZ 压缩文件已生成:', gzOutputPath);
 
         console.log('✓ 处理完成，文件已保存到当前仓库:');
         console.log('  - IPV4.m3u:', m3uOutputPath);
         console.log('  - chanels.gz:', gzOutputPath);
         console.log('✓ 原始频道数:', hdData.channels.length);
         console.log('✓ 更新后频道数:', newChannels.length);
+
+        console.log('=== 处理结束 ===');
 
     } catch (error) {
         console.error('✗ 处理失败:', error.message);
