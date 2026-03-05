@@ -259,8 +259,8 @@ def update_mirrors_after_check(all_mirrors, detected_mirrors):
     current_static = load_static_mirrors()
     if current_static is None:
         # 如果没有预置文件，使用默认的
-        from fetch_mirrors import MIRROR_SOURCES
-        current_static = MIRROR_SOURCES.copy()
+        from fetch_mirrors import DEFAULT_MIRROR_SOURCES
+        current_static = DEFAULT_MIRROR_SOURCES.copy()
     
     # 2. 更新所有镜像的历史状态
     for mirror in all_mirrors:
