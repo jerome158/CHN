@@ -17,8 +17,8 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-# 镜像源配置
-MIRROR_SOURCES = [
+# 默认镜像源配置（如果static_mirrors.json不存在则使用）
+DEFAULT_MIRROR_SOURCES = [
     {
         "name": "GitHub镜像加速 - ghproxy",
         "url": "https://mirror.ghproxy.com",
@@ -73,6 +73,26 @@ def enable_realtime_search():
     # 通过环境变量控制是否启用搜索
     return os.getenv('ENABLE_REALTIME_SEARCH', 'true').lower() == 'true'
 
+def enable_dynamic_management():
+    """
+    是否启用动态管理功能（自动添加/删除预置镜像）
+    """
+    # 通过环境变量控制是否启用动态管理
+    return os.getenv('ENABLE_DYNAMIC_MANAGEMENT', 'true').lower() == 'true'
+
+def load_static_mirrors():
+    """
+    加载预置镜像列表
+    """
+    static_file = os.path.join(PROJECT_ROOT, "static_mirrors.json")
+    if os.path.exists(static_file):
+        try:
+            with open(static_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"加载预置镜像失败，使用默认配置: {e}")
+    return DEFAULT_MIRROR_SOURCES.copy()
+
 def load_discovered_mirrors():
     """
     加载通过搜索发现的镜像
@@ -121,8 +141,12 @@ def run_realtime_search():
 def get_all_mirrors():
     """
     获取所有镜像源（包括预置和搜索发现的）
+    返回：预置镜像列表, 发现的镜像列表
     """
-    mirrors = MIRROR_SOURCES.copy()
+    # 加载预置镜像（可能包含动态管理的结果）
+    static_mirrors = load_static_mirrors()
+    
+    discovered = []
     
     # 如果启用了实时搜索，加载发现的镜像
     if enable_realtime_search():
@@ -133,17 +157,10 @@ def get_all_mirrors():
         if not discovered and enable_realtime_search():
             discovered = run_realtime_search()
         
-        # 合并发现的镜像
         if discovered:
-            seen_prefixes = {m["prefix"] for m in mirrors}
-            
-            for new_mirror in discovered:
-                if new_mirror.get("prefix") not in seen_prefixes:
-                    mirrors.append(new_mirror)
-                    seen_prefixes.add(new_mirror.get("prefix"))
-                    print(f"  + 发现新镜像: {new_mirror['name']}")
+            print(f"  发现 {len(discovered)} 个新镜像")
     
-    return mirrors
+    return static_mirrors, discovered
 
 def check_mirror_availability(prefix):
     """
@@ -197,16 +214,19 @@ def fetch_mirrors():
     """
     从各个源获取镜像地址并测试可用性
     """
-    # 获取所有镜像源（包括搜索发现的）
-    all_mirrors = get_all_mirrors()
+    # 获取预置镜像和发现的镜像
+    static_mirrors, discovered = get_all_mirrors()
+    
+    # 合并所有镜像
+    all_mirrors = static_mirrors + discovered
     
     mirrors_data = {
         "mirrors": [],
         "last_updated": datetime.now().isoformat(),
         "total_count": len(all_mirrors),
         "available_count": 0,
-        "static_count": len(MIRROR_SOURCES),
-        "discovered_count": len(all_mirrors) - len(MIRROR_SOURCES)
+        "static_count": len(static_mirrors),
+        "discovered_count": len(discovered)
     }
     
     print(f"\n开始检查 {len(all_mirrors)} 个镜像源...")
@@ -241,6 +261,26 @@ def fetch_mirrors():
         # 避免请求过快
         time.sleep(0.5)
     
+    # 如果启用了动态管理，更新预置镜像列表
+    if enable_dynamic_management():
+        print("\n" + "=" * 60)
+        print("启用动态管理...")
+        print("=" * 60)
+        try:
+            from mirror_manager import update_mirrors_after_check, get_summary
+            updated_static = update_mirrors_after_check(all_mirrors, discovered)
+            
+            # 更新统计信息
+            mirrors_data["static_count"] = len(updated_static)
+            
+            # 显示管理摘要
+            print("\n镜像管理摘要:")
+            summary = get_summary()
+            print(f"  - 总计跟踪: {summary['total_tracked']} 个")
+            print(f"  - 当前预置: {summary['static_count']} 个")
+        except Exception as e:
+            print(f"动态管理执行失败: {e}")
+    
     # 按可用性和响应时间排序
     mirrors_data["mirrors"].sort(key=lambda x: (
         not x["available"],
@@ -248,7 +288,39 @@ def fetch_mirrors():
         x["type"] == "discovered"  # 优先显示预置的
     ))
     
+    # 保存测速最快的前两个镜像到 gitfast.txt
+    save_fastest_mirrors(mirrors_data)
+    
     return mirrors_data
+
+def save_fastest_mirrors(data):
+    """
+    保存测速最快的前两个镜像到 gitfast.txt
+    """
+    # 筛选可用的镜像并按响应时间排序
+    available_mirrors = [m for m in data["mirrors"] if m["available"]]
+    available_mirrors.sort(key=lambda x: x.get("response_time", float('inf')))
+    
+    # 取前两个最快的镜像
+    fastest_two = available_mirrors[:2]
+    
+    if not fastest_two:
+        print("\n警告: 没有可用的镜像，无法生成 gitfast.txt")
+        return
+    
+    # 保存到 gitfast.txt（每行一个前缀）
+    output_file = os.path.join(PROJECT_ROOT, "gitfast.txt")
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for mirror in fastest_two:
+            f.write(mirror["prefix"] + "\n")
+    
+    print(f"\n{'='*60}")
+    print(f"最快的镜像地址已保存到 {output_file}")
+    print(f"1. {fastest_two[0]['name']} - {fastest_two[0]['response_time']}ms")
+    print(f"   {fastest_two[0]['prefix']}")
+    if len(fastest_two) > 1:
+        print(f"2. {fastest_two[1]['name']} - {fastest_two[1]['response_time']}ms")
+        print(f"   {fastest_two[1]['prefix']}")
 
 def save_mirrors(data, filename="mirrors.json"):
     """
@@ -275,10 +347,18 @@ def main():
     """
     print("=" * 60)
     print("GitHub镜像加速地址提取工具")
+    
+    features = []
     if enable_realtime_search():
-        print("实时搜索功能: 已启用")
+        features.append("实时搜索")
+    if enable_dynamic_management():
+        features.append("动态管理")
+    
+    if features:
+        print(f"功能: {', '.join(features)}")
     else:
-        print("实时搜索功能: 已禁用")
+        print("功能: 基础模式")
+    
     print("=" * 60)
     
     # 获取镜像数据
