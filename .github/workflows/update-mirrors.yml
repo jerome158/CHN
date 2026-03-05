@@ -1,0 +1,49 @@
+name: Update GitHub Mirrors
+
+on:
+  schedule:
+    # 每天北京时间 00:00 (UTC 16:00) 运行
+    - cron: '0 16 * * *'
+  workflow_dispatch: # 允许手动触发
+  push:
+    branches:
+      - main
+  # 每周手动触发一次搜索新镜像
+  schedule:
+    - cron: '0 16 * * 0'  # 每周日北京时间 00:00
+
+permissions:
+  contents: write
+
+jobs:
+  update-mirrors:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml
+          
+      - name: Run mirror fetcher with realtime search
+        run: |
+          python gitfast/scripts/fetch_mirrors.py
+        env:
+          ENABLE_REALTIME_SEARCH: 'true'
+          
+      - name: Generate GitHub Pages
+        run: |
+          python gitfast/scripts/generate_pages.py
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gitfast/docs
