@@ -1,2 +1,2 @@
-https://mirror.ghproxy.com/
+https://github.com/
 https://ghproxy.com/
