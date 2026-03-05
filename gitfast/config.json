@@ -1,0 +1,33 @@
+{
+  "search": {
+    "enabled": true,
+    "sources": [
+      "github_api",
+      "tech_blogs",
+      "community_forums"
+    ],
+    "max_results": 50,
+    "timeout_seconds": 60
+  },
+  "validation": {
+    "skip_keywords": [
+      "login",
+      "auth",
+      "signin",
+      "register",
+      "password"
+    ],
+    "require_protocol": true,
+    "normalize_urls": true
+  },
+  "testing": {
+    "test_repository": "torvalds/linux",
+    "timeout": 10,
+    "max_retries": 3
+  },
+  "sorting": {
+    "primary": "availability",
+    "secondary": "response_time",
+    "prefer_static": true
+  }
+}

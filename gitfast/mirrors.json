@@ -1,0 +1,21 @@
+{
+  "mirrors": [],
+  "last_updated": "",
+  "sources": [
+    {
+      "name": "ghproxy.com",
+      "url": "https://ghproxy.com",
+      "reliable": true
+    },
+    {
+      "name": "mirror.ghproxy.com",
+      "url": "https://mirror.ghproxy.com",
+      "reliable": true
+    },
+    {
+      "name": "gh.api.99988866.xyz",
+      "url": "https://gh.api.99988866.xyz",
+      "reliable": true
+    }
+  ]
+}
