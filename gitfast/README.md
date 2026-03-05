@@ -6,7 +6,8 @@
 
 - 🔍 **智能搜索**: 实时从网络搜索最新的GitHub镜像地址
 - ✅ **自动检测**: 自动检测多个GitHub镜像地址的可用性
-- ⚡ **实时更新**: 通过GitHub Actions定时任务更新数据
+- 🤖 **动态管理**: 自动淘汰失效镜像，自动添加新镜像到预置列表
+- ⚡ **最快推荐**: 自动保存测速最快的前两个镜像到 `gitfast.txt`
 - 📊 **状态监控**: 显示每个镜像的响应时间和可用状态
 - 🌐 **GitHub Pages**: 提供美观的网页界面展示
 - 📋 **一键复制**: 方便用户快速复制镜像地址
@@ -75,12 +76,18 @@
    - 记录响应时间和状态码
    - 按可用性和响应时间排序
 
-3. **页面生成** (`generate_pages.py`):
+3. **动态管理** (`mirror_manager.py`):
+   - 跟踪每个镜像的可用性历史
+   - 连续3次不可用则从预置列表移除
+   - 将新发现的高质量镜像加入预置
+   - 保持预置列表最多7个
+
+4. **页面生成** (`generate_pages.py`):
    - 读取检测到的镜像数据
    - 生成美观的HTML页面
    - 包含复制功能和使用说明
 
-4. **定时更新** (`.github/workflows/update-mirrors.yml`):
+5. **定时更新** (`.github/workflows/update-mirrors.yml`):
    - 每天北京时间 00:00 (UTC 16:00) 自动运行
    - 每周日进行完整的网络搜索
    - 支持手动触发
@@ -101,6 +108,18 @@
 
 ## 💡 使用方法
 
+### 使用最快的镜像（推荐）
+
+项目会自动生成 `gitfast.txt` 文件，包含测速最快的前两个镜像地址：
+
+```bash
+# 查看最快的镜像
+cat gitfast/gitfast.txt
+
+# 使用第一个（最快的）镜像
+git clone $(head -1 gitfast/gitfast.txt)user/repo.git
+```
+
 ### Git Clone
 
 ```bash
@@ -109,6 +128,9 @@ git clone https://github.com/user/repo.git
 
 # 使用镜像地址（以mirror.ghproxy.com为例）
 git clone https://mirror.ghproxy.com/user/repo.git
+
+# 使用最快的镜像
+git clone $(head -1 gitfast/gitfast.txt)user/repo.git
 ```
 
 ### Git Push
@@ -119,6 +141,23 @@ git remote add origin https://mirror.ghproxy.com/user/repo.git
 
 # 推送代码
 git push origin main
+```
+
+### 配置 Git 使用镜像
+
+将以下内容添加到 `~/.gitconfig`（Windows: `C:\Users\你的用户名\.gitconfig`）：
+
+```ini
+[url "https://mirror.ghproxy.com/"]
+    insteadOf = https://github.com/
+```
+
+或者使用最快的镜像：
+
+```bash
+# 从 gitfast.txt 读取第一个镜像并配置
+FASTEST=$(head -1 gitfast/gitfast.txt)
+git config --global url."$FASTEST".insteadOf https://github.com/
 ```
 
 ## ⚙️ 自定义配置
@@ -157,6 +196,43 @@ schedule:
 env:
   ENABLE_REALTIME_SEARCH: 'true'  # 或 'false'
 ```
+
+### 控制动态管理功能
+
+动态管理功能会自动：
+- 移除连续3次不可用的预置镜像
+- 将可用的新镜像加入预置列表
+- 保持预置列表最多7个
+
+通过环境变量控制是否启用：
+
+```yaml
+# 在工作流中
+env:
+  ENABLE_DYNAMIC_MANAGEMENT: 'true'  # 或 'false'
+```
+
+本地运行时：
+
+```bash
+# 启用动态管理
+ENABLE_DYNAMIC_MANAGEMENT=true python scripts/fetch_mirrors.py
+
+# 禁用动态管理
+ENABLE_DYNAMIC_MANAGEMENT=false python scripts/fetch_mirrors.py
+```
+
+### 查看镜像管理摘要
+
+```bash
+python gitfast/scripts/mirror_manager.py
+```
+
+这将显示所有跟踪镜像的统计信息，包括：
+- 可用率
+- 连续失败次数
+- 最后检查时间
+- 是否为预置镜像
 
 或在 `gitfast/config.json` 中配置：
 
