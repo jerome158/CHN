@@ -3,7 +3,7 @@ name: gfast
 on:
   schedule:
     - cron: '0 16 * * *'
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:  
   push:
     branches:
       - main
@@ -38,11 +38,17 @@ jobs:
       - name: Generate GitHub Pages
         run: |
           python gitfast/scripts/generate_pages.py
-          
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add gitfast/mirrors.json gitfast/gitfast.txt gitfast/docs/
+          git diff --staged --quiet || git commit -m "Auto update: mirrors and pages [skip ci]"
+          git push
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gitfast/docs
-
-
