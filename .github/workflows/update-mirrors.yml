@@ -2,15 +2,11 @@ name: Update GitHub Mirrors
 
 on:
   schedule:
-    # 每天北京时间 00:00 (UTC 16:00) 运行
     - cron: '0 16 * * *'
   workflow_dispatch: # 允许手动触发
   push:
     branches:
       - main
-  # 每周手动触发一次搜索新镜像
-  schedule:
-    - cron: '0 16 * * 0'  # 每周日北京时间 00:00
 
 permissions:
   contents: write
@@ -48,3 +44,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gitfast/docs
+
