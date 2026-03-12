@@ -9,7 +9,7 @@
       "description": "通过搜索发现 - 来源: github:wpsocio/wptelegram",
       "available": true,
       "status_code": 200,
-      "response_time": 390.12,
+      "response_time": 486.37,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 875.42,
+      "response_time": 690.53,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 888.1,
+      "response_time": 1115.0,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 264.95,
+      "response_time": 400.85,
       "message": "状态码: 403"
     },
     {
@@ -57,7 +57,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 352.3,
+      "response_time": 486.12,
       "message": "状态码: 403"
     },
     {
@@ -69,7 +69,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 359.14,
+      "response_time": 505.52,
       "message": "状态码: 403"
     },
     {
@@ -81,7 +81,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1590.27,
+      "response_time": 1511.79,
       "message": "状态码: 502"
     },
     {
@@ -93,7 +93,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1688.66,
+      "response_time": 2024.29,
       "message": "状态码: 404"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1799.29,
+      "response_time": 3914.78,
       "message": "状态码: 502"
     },
     {
@@ -181,7 +181,7 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-03-11T16:41:41.729143",
+  "last_updated": "2026-03-12T16:51:57.912729",
   "total_count": 15,
   "available_count": 3,
   "static_count": 6,
