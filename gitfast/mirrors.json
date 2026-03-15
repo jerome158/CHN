@@ -1,30 +1,6 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 735.82,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 789.19,
-      "message": "可用"
-    },
-    {
       "name": "GitHub搜索: wptelegram",
       "url": "https://github.com/",
       "prefix": "https://github.com/",
@@ -33,56 +9,44 @@
       "description": "通过搜索发现 - 来源: github:wpsocio/wptelegram",
       "available": true,
       "status_code": 200,
-      "response_time": 1022.35,
+      "response_time": 391.77,
       "message": "可用"
     },
     {
-      "name": "GitHub搜索: yunxiao-LLM-reviewer",
-      "url": "https://registry.npmmirror.com/",
-      "prefix": "https://registry.npmmirror.com/",
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 845.11,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 879.85,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: ghproxy",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:listener-He/yunxiao-LLM-reviewer",
-      "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
+      "source": "github:vansour/ghproxy",
+      "description": "通过搜索发现 - 来源: github:vansour/ghproxy",
       "available": false,
-      "status_code": 404,
-      "response_time": 589.28,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub镜像加速 - Gitee镜像",
-      "url": "https://gitee.com/mirrors",
-      "prefix": "https://gitee.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
-      "available": false,
-      "status_code": 404,
-      "response_time": 1587.47,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1801.77,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1829.34,
-      "message": "状态码: 502"
+      "status_code": 400,
+      "response_time": 36.66,
+      "message": "状态码: 400"
     },
     {
       "name": "GitHub搜索: Ghproxy",
@@ -93,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 1911.05,
+      "response_time": 290.44,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +69,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 2075.55,
+      "response_time": 343.88,
       "message": "状态码: 403"
     },
     {
@@ -117,8 +81,56 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 2239.74,
+      "response_time": 358.99,
       "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub搜索: yunxiao-LLM-reviewer",
+      "url": "https://registry.npmmirror.com/",
+      "prefix": "https://registry.npmmirror.com/",
+      "type": "discovered",
+      "source": "github:listener-He/yunxiao-LLM-reviewer",
+      "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
+      "available": false,
+      "status_code": 404,
+      "response_time": 527.13,
+      "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 2092.22,
+      "message": "状态码: 502"
+    },
+    {
+      "name": "GitHub镜像加速 - Gitee镜像",
+      "url": "https://gitee.com/mirrors",
+      "prefix": "https://gitee.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
+      "available": false,
+      "status_code": 404,
+      "response_time": 3072.5,
+      "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 4211.73,
+      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -193,9 +205,9 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-03-14T16:21:08.095180",
-  "total_count": 16,
+  "last_updated": "2026-03-15T16:22:25.392056",
+  "total_count": 17,
   "available_count": 3,
   "static_count": 6,
-  "discovered_count": 9
+  "discovered_count": 10
 }
