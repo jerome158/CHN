@@ -9,7 +9,7 @@
       "description": "通过搜索发现 - 来源: github:wpsocio/wptelegram",
       "available": true,
       "status_code": 200,
-      "response_time": 432.56,
+      "response_time": 582.27,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 832.22,
+      "response_time": 717.32,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 891.97,
+      "response_time": 921.02,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 449.66,
+      "response_time": 417.52,
       "message": "状态码: 403"
     },
     {
@@ -57,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 501.88,
+      "response_time": 496.18,
       "message": "状态码: 403"
     },
     {
@@ -69,7 +69,7 @@
       "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
       "available": false,
       "status_code": 404,
-      "response_time": 531.15,
+      "response_time": 502.18,
       "message": "状态码: 404"
     },
     {
@@ -81,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 663.34,
+      "response_time": 1038.37,
       "message": "状态码: 403"
     },
     {
@@ -93,19 +93,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1326.85,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1339.09,
+      "response_time": 1200.14,
       "message": "状态码: 502"
     },
     {
@@ -117,8 +105,20 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2787.68,
+      "response_time": 1567.95,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 1799.98,
+      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -193,7 +193,7 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-03-18T05:12:09.490532",
+  "last_updated": "2026-03-18T05:12:53.675583",
   "total_count": 16,
   "available_count": 3,
   "static_count": 6,
