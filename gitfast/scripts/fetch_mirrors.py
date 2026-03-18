@@ -172,6 +172,15 @@ def check_mirror_availability(prefix):
     Returns:
         dict: 包含状态和响应时间
     """
+    # 排除原始的 github.com 本身
+    if prefix.startswith("https://github.com") or prefix.startswith("http://github.com"):
+        return {
+            "available": False,
+            "status_code": None,
+            "response_time": None,
+            "message": "排除原始GitHub地址"
+        }
+    
     test_url = prefix + "torvalds/linux.git"
     
     try:

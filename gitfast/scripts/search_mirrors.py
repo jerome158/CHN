@@ -267,6 +267,12 @@ def filter_and_validate_mirrors(discovered_mirrors):
         if any(keyword in normalized_url.lower() for keyword in skip_keywords):
             continue
         
+        # 排除原始的 github.com 本身
+        if 'github.com' in normalized_url and 'mirror' not in normalized_url.lower() and 'proxy' not in normalized_url.lower() and 'fastgit' not in normalized_url.lower() and 'gitclone' not in normalized_url.lower():
+            # 如果URL是 github.com 本身而不是镜像，则跳过
+            if normalized_url.startswith('https://github.com') or normalized_url.startswith('http://github.com'):
+                continue
+        
         # 构建前缀
         prefix = normalized_url
         if not any(keyword in prefix for keyword in ['github.com', 'gitclone.com']):
