@@ -38,10 +38,15 @@ def deduplicate_mirrors(mirrors):
                 mirror_dict[prefix] = mirror
             else:
                 existing = mirror_dict[prefix]
-                existing_time = existing.get("response_time", float('inf'))
-                new_time = mirror.get("response_time", float('inf'))
-                if new_time < existing_time:
+                existing_time = existing.get("response_time")
+                new_time = mirror.get("response_time")
+
+                # 处理 None 值:有值的优先,都为 None 时保留第一个
+                if existing_time is None and new_time is not None:
                     mirror_dict[prefix] = mirror
+                elif existing_time is not None and new_time is not None:
+                    if new_time < existing_time:
+                        mirror_dict[prefix] = mirror
     return list(mirror_dict.values())
 
 def generate_index_html(data):
