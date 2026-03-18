@@ -286,8 +286,52 @@ def update_mirrors_after_check(all_mirrors, detected_mirrors):
             print(f"\n已将 {len(promoted_mirrors)} 个新镜像加入预置列表")
     
     # 5. 限制预置镜像数量不超过7个
-    # 按加入时间或优先级排序，保留最新的7个
-    kept_mirrors = kept_mirrors[:MAX_STATIC_MIRRORS]
+    # 按优先级排序:优先保留新加入的镜像,然后按响应时间排序
+    history = load_history()
+
+    def sort_priority(mirror):
+        """
+        计算镜像的排序优先级
+        返回元组: (是否新镜像, 响应时间)
+        新镜像优先级最高,响应时间越短优先级越高
+        """
+        prefix = get_mirror_prefix(mirror)
+
+        # 检查是否是新加入的镜像
+        is_promoted = False
+        if prefix in history:
+            mirror_data = history[prefix]
+            # 如果有 promoted_date 且在最近7天内加入,认为是新镜像
+            promoted_date = mirror_data.get("promoted_date")
+            if promoted_date:
+                try:
+                    promoted_time = datetime.fromisoformat(promoted_date)
+                    days_since_promoted = (datetime.now() - promoted_time).days
+                    is_promoted = days_since_promoted < 7
+                except:
+                    pass
+
+        # 获取响应时间 (越小越好)
+        response_time = mirror.get("response_time", float('inf'))
+
+        # 返回排序元组: (不是新镜像(0/1), 响应时间)
+        # False(0) < True(1), 所以新镜像(is_promoted=True)会排在前面
+        return (not is_promoted, response_time)
+
+    # 按优先级排序
+    kept_mirrors.sort(key=sort_priority)
+
+    # 保留前7个
+    final_mirrors = kept_mirrors[:MAX_STATIC_MIRRORS]
+
+    # 如果被截断了,打印信息
+    if len(kept_mirrors) > MAX_STATIC_MIRRORS:
+        removed_extra = kept_mirrors[MAX_STATIC_MIRRORS:]
+        print(f"\n  ℹ 超过预置数量限制,移除 {len(removed_extra)} 个优先级较低的镜像:")
+        for mirror in removed_extra:
+            print(f"    - {mirror['name']}")
+
+    kept_mirrors = final_mirrors
     
     # 6. 保存更新后的预置镜像
     save_static_mirrors(kept_mirrors)

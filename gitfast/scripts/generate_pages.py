@@ -24,6 +24,26 @@ def load_mirrors(filename="mirrors.json"):
     with open(filename, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def deduplicate_mirrors(mirrors):
+    """
+    去重:保留响应时间最短的镜像
+    """
+    # 使用字典去重,key为prefix,值为镜像对象
+    mirror_dict = {}
+    for mirror in mirrors:
+        prefix = mirror.get("prefix", "")
+        if prefix:
+            # 如果prefix已存在,保留响应时间更短的
+            if prefix not in mirror_dict:
+                mirror_dict[prefix] = mirror
+            else:
+                existing = mirror_dict[prefix]
+                existing_time = existing.get("response_time", float('inf'))
+                new_time = mirror.get("response_time", float('inf'))
+                if new_time < existing_time:
+                    mirror_dict[prefix] = mirror
+    return list(mirror_dict.values())
+
 def generate_index_html(data):
     """
     生成主页HTML
@@ -33,9 +53,12 @@ def generate_index_html(data):
         last_time = datetime.fromisoformat(last_updated).strftime("%Y-%m-%d %H:%M:%S UTC")
     except:
         last_time = last_updated
-    
-    available_mirrors = [m for m in data["mirrors"] if m["available"]]
-    unavailable_mirrors = [m for m in data["mirrors"] if not m["available"]]
+
+    # 去重处理
+    unique_mirrors = deduplicate_mirrors(data["mirrors"])
+
+    available_mirrors = [m for m in unique_mirrors if m["available"]]
+    unavailable_mirrors = [m for m in unique_mirrors if not m["available"]]
     
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -434,16 +457,25 @@ def main():
     print("=" * 60)
     print("GitHub Pages页面生成工具")
     print("=" * 60)
-    
+
     # 加载镜像数据
     mirrors_data = load_mirrors()
-    
+
+    # 显示去重前的数量
+    original_count = len(mirrors_data["mirrors"])
+    print(f"原始镜像数量: {original_count}")
+
     # 生成HTML
     html = generate_index_html(mirrors_data)
-    
+
     # 保存HTML
     save_html(html)
-    
+
+    # 更新总数统计
+    unique_mirrors = deduplicate_mirrors(mirrors_data["mirrors"])
+    print(f"去重后镜像数量: {len(unique_mirrors)}")
+    print(f"去重数量: {original_count - len(unique_mirrors)}")
+
     print("=" * 60)
     print("完成!")
 
