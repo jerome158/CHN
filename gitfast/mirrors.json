@@ -1,6 +1,30 @@
 {
   "mirrors": [
     {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 313.17,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 558.9,
+      "message": "可用"
+    },
+    {
       "name": "GitHub搜索: wptelegram",
       "url": "https://github.com/",
       "prefix": "https://github.com/",
@@ -9,32 +33,20 @@
       "description": "通过搜索发现 - 来源: github:wpsocio/wptelegram",
       "available": true,
       "status_code": 200,
-      "response_time": 548.92,
+      "response_time": 601.12,
       "message": "可用"
     },
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 764.81,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 1063.4,
-      "message": "可用"
+      "name": "GitHub搜索: yunxiao-LLM-reviewer",
+      "url": "https://registry.npmmirror.com/",
+      "prefix": "https://registry.npmmirror.com/",
+      "type": "discovered",
+      "source": "github:listener-He/yunxiao-LLM-reviewer",
+      "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
+      "available": false,
+      "status_code": 404,
+      "response_time": 399.25,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub镜像加速 - GitProxy",
@@ -45,19 +57,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 361.22,
-      "message": "状态码: 403"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 414.85,
+      "response_time": 498.04,
       "message": "状态码: 403"
     },
     {
@@ -69,22 +69,10 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 429.51,
+      "response_time": 812.06,
       "message": "状态码: 403"
     },
     {
-      "name": "GitHub搜索: yunxiao-LLM-reviewer",
-      "url": "https://registry.npmmirror.com/",
-      "prefix": "https://registry.npmmirror.com/",
-      "type": "discovered",
-      "source": "github:listener-He/yunxiao-LLM-reviewer",
-      "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
-      "available": false,
-      "status_code": 404,
-      "response_time": 599.28,
-      "message": "状态码: 404"
-    },
-    {
       "name": "GitHub镜像加速 - GitClone",
       "url": "https://gitclone.com",
       "prefix": "https://gitclone.com/github.com/",
@@ -93,19 +81,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1273.43,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1329.55,
+      "response_time": 1158.82,
       "message": "状态码: 502"
     },
     {
@@ -117,8 +93,32 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 4802.97,
+      "response_time": 1610.86,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 2397.21,
+      "message": "状态码: 502"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 5404.61,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -193,7 +193,7 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-03-17T16:57:26.230036",
+  "last_updated": "2026-03-18T04:49:33.422675",
   "total_count": 16,
   "available_count": 3,
   "static_count": 6,
