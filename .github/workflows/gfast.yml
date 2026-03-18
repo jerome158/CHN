@@ -45,10 +45,11 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add gitfast/mirrors.json gitfast/gitfast.txt gitfast/docs/
           git diff --staged --quiet || git commit -m "Auto update: mirrors and pages [skip ci]"
+          git pull --rebase --autostash
           git push
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./gitfast/docs
