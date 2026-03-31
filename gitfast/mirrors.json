@@ -1,18 +1,6 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 958.63,
-      "message": "可用"
-    },
-    {
       "name": "GitHub搜索: gh-proxy-for-me",
       "url": "https://ghproxy.com/",
       "prefix": "https://ghproxy.com/",
@@ -21,7 +9,7 @@
       "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
       "available": true,
       "status_code": 200,
-      "response_time": 1157.91,
+      "response_time": 126.8,
       "message": "可用"
     },
     {
@@ -33,8 +21,32 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 1167.52,
+      "response_time": 316.29,
       "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 423.98,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: Ghproxy",
+      "url": "https://ghproxy.1888866.xyz/",
+      "prefix": "https://ghproxy.1888866.xyz/",
+      "type": "discovered",
+      "source": "github:weekoo2025/Ghproxy",
+      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
+      "available": false,
+      "status_code": 404,
+      "response_time": 102.29,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: gh-proxy-for-me",
@@ -45,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
       "available": false,
       "status_code": 400,
-      "response_time": 53.67,
+      "response_time": 126.08,
       "message": "状态码: 400"
     },
     {
@@ -57,7 +69,7 @@
       "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
       "available": false,
       "status_code": 404,
-      "response_time": 76.43,
+      "response_time": 154.57,
       "message": "状态码: 404"
     },
     {
@@ -69,32 +81,8 @@
       "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
       "available": false,
       "status_code": 400,
-      "response_time": 86.02,
+      "response_time": 173.17,
       "message": "状态码: 400"
-    },
-    {
-      "name": "GitHub搜索: Ghproxy",
-      "url": "https://ghproxy.1888866.xyz/",
-      "prefix": "https://ghproxy.1888866.xyz/",
-      "type": "discovered",
-      "source": "github:weekoo2025/Ghproxy",
-      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
-      "available": false,
-      "status_code": 404,
-      "response_time": 312.65,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: yunxiao-LLM-reviewer",
-      "url": "https://registry.npmmirror.com/",
-      "prefix": "https://registry.npmmirror.com/",
-      "type": "discovered",
-      "source": "github:listener-He/yunxiao-LLM-reviewer",
-      "description": "通过搜索发现 - 来源: github:listener-He/yunxiao-LLM-reviewer",
-      "available": false,
-      "status_code": 404,
-      "response_time": 340.52,
-      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: Ghproxy",
@@ -105,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 343.55,
+      "response_time": 499.97,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 355.79,
+      "response_time": 529.32,
       "message": "状态码: 403"
     },
     {
@@ -129,7 +117,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 919.49,
+      "response_time": 633.53,
       "message": "状态码: 403"
     },
     {
@@ -141,7 +129,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1495.81,
+      "response_time": 1099.82,
       "message": "状态码: 502"
     },
     {
@@ -153,7 +141,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1544.72,
+      "response_time": 1158.15,
       "message": "状态码: 502"
     },
     {
@@ -165,7 +153,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2987.04,
+      "response_time": 1530.17,
       "message": "状态码: 404"
     },
     {
@@ -239,42 +227,6 @@
       "status_code": null,
       "response_time": null,
       "message": "('Connection aborted.', ConnectionResetError(104, "
-    },
-    {
-      "name": "GitHub搜索: gh-proxy-for-me",
-      "url": "https://mirror.ghproxy.com/",
-      "prefix": "https://mirror.ghproxy.com/",
-      "type": "discovered",
-      "source": "github:stavejobs/gh-proxy-for-me",
-      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
-    },
-    {
-      "name": "GitHub搜索: gh-proxy-for-me",
-      "url": "https://raw.ghproxy.com/",
-      "prefix": "https://raw.ghproxy.com/",
-      "type": "discovered",
-      "source": "github:stavejobs/gh-proxy-for-me",
-      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='raw.ghproxy.com', port=4"
-    },
-    {
-      "name": "GitHub搜索: gh-proxy-for-me",
-      "url": "https://api.ghproxy.com/",
-      "prefix": "https://api.ghproxy.com/",
-      "type": "discovered",
-      "source": "github:stavejobs/gh-proxy-for-me",
-      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='api.ghproxy.com', port=4"
     },
     {
       "name": "GitHub搜索: gh-proxy-for-me",
@@ -290,6 +242,30 @@
     },
     {
       "name": "GitHub搜索: gh-proxy-for-me",
+      "url": "https://raw.ghproxy.com/",
+      "prefix": "https://raw.ghproxy.com/",
+      "type": "discovered",
+      "source": "github:stavejobs/gh-proxy-for-me",
+      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='raw.ghproxy.com', port=4"
+    },
+    {
+      "name": "GitHub搜索: gh-proxy-for-me",
+      "url": "https://mirror.ghproxy.com/",
+      "prefix": "https://mirror.ghproxy.com/",
+      "type": "discovered",
+      "source": "github:stavejobs/gh-proxy-for-me",
+      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
+    },
+    {
+      "name": "GitHub搜索: gh-proxy-for-me",
       "url": "https://your-custom-mirror.com/",
       "prefix": "https://your-custom-mirror.com/",
       "type": "discovered",
@@ -299,11 +275,23 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='your-custom-mirror.com',"
+    },
+    {
+      "name": "GitHub搜索: gh-proxy-for-me",
+      "url": "https://api.ghproxy.com/",
+      "prefix": "https://api.ghproxy.com/",
+      "type": "discovered",
+      "source": "github:stavejobs/gh-proxy-for-me",
+      "description": "通过搜索发现 - 来源: github:stavejobs/gh-proxy-for-me",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='api.ghproxy.com', port=4"
     }
   ],
-  "last_updated": "2026-03-30T16:47:54.109071",
-  "total_count": 25,
+  "last_updated": "2026-03-31T16:50:24.091090",
+  "total_count": 24,
   "available_count": 3,
   "static_count": 4,
-  "discovered_count": 18
+  "discovered_count": 17
 }
