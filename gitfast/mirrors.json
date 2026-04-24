@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 610.38,
+      "response_time": 593.27,
       "message": "可用"
     },
     {
@@ -21,10 +21,58 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 720.89,
+      "response_time": 765.87,
       "message": "可用"
     },
     {
+      "name": "GitHub搜索: Ghproxy",
+      "url": "https://mirror.houlang.cloud/",
+      "prefix": "https://mirror.houlang.cloud/",
+      "type": "discovered",
+      "source": "github:weekoo2025/Ghproxy",
+      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
+      "available": true,
+      "status_code": 200,
+      "response_time": 1012.27,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: mtproto-zig-build",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
+      "type": "discovered",
+      "source": "github:utaoutau/mtproto-zig-build",
+      "description": "通过搜索发现 - 来源: github:utaoutau/mtproto-zig-build",
+      "available": false,
+      "status_code": 400,
+      "response_time": 57.68,
+      "message": "状态码: 400"
+    },
+    {
+      "name": "GitHub搜索: CF-GitHub-Proxy",
+      "url": "https://api.github.com/",
+      "prefix": "https://api.github.com/",
+      "type": "discovered",
+      "source": "github:Geekertao/CF-GitHub-Proxy",
+      "description": "通过搜索发现 - 来源: github:Geekertao/CF-GitHub-Proxy",
+      "available": false,
+      "status_code": 404,
+      "response_time": 106.25,
+      "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub搜索: CF-GitHub-Proxy",
+      "url": "https://gist.githubusercontent.com/",
+      "prefix": "https://gist.githubusercontent.com/",
+      "type": "discovered",
+      "source": "github:Geekertao/CF-GitHub-Proxy",
+      "description": "通过搜索发现 - 来源: github:Geekertao/CF-GitHub-Proxy",
+      "available": false,
+      "status_code": 404,
+      "response_time": 218.95,
+      "message": "状态码: 404"
+    },
+    {
       "name": "GitHub镜像加速 - GitProxy",
       "url": "https://ghproxy.net",
       "prefix": "https://ghproxy.net/",
@@ -33,7 +81,31 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 425.99,
+      "response_time": 354.69,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub搜索: Ghproxy",
+      "url": "https://ghproxy.1888866.xyz/",
+      "prefix": "https://ghproxy.1888866.xyz/",
+      "type": "discovered",
+      "source": "github:weekoo2025/Ghproxy",
+      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
+      "available": false,
+      "status_code": 404,
+      "response_time": 423.82,
+      "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub搜索: fdp",
+      "url": "https://ghproxy.net/",
+      "prefix": "https://ghproxy.net/",
+      "type": "discovered",
+      "source": "github:xumouren225588/fdp",
+      "description": "通过搜索发现 - 来源: github:xumouren225588/fdp",
+      "available": false,
+      "status_code": 403,
+      "response_time": 1476.5,
       "message": "状态码: 403"
     },
     {
@@ -45,7 +117,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 489.72,
+      "response_time": 1909.77,
       "message": "状态码: 403"
     },
     {
@@ -57,19 +129,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 2963.63,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 3029.9,
+      "response_time": 1940.74,
       "message": "状态码: 502"
     },
     {
@@ -81,8 +141,20 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 4321.99,
+      "response_time": 3140.08,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 4887.78,
+      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -157,9 +229,9 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-04-23T17:11:35.682132",
-  "total_count": 13,
-  "available_count": 2,
-  "static_count": 7,
-  "discovered_count": 6
+  "last_updated": "2026-04-24T16:45:17.285232",
+  "total_count": 19,
+  "available_count": 3,
+  "static_count": 6,
+  "discovered_count": 12
 }
