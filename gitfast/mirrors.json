@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 206.03,
+      "response_time": 615.81,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 221.06,
+      "response_time": 689.62,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 862.39,
+      "response_time": 1095.86,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 480.92,
+      "response_time": 280.78,
       "message": "状态码: 403"
     },
     {
@@ -57,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 626.04,
+      "response_time": 280.96,
       "message": "状态码: 403"
     },
     {
@@ -69,7 +69,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 646.47,
+      "response_time": 299.14,
       "message": "状态码: 403"
     },
     {
@@ -81,7 +81,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1305.78,
+      "response_time": 1348.99,
       "message": "状态码: 502"
     },
     {
@@ -93,7 +93,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 2342.78,
+      "response_time": 1683.33,
       "message": "状态码: 502"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 5486.42,
+      "response_time": 2331.25,
       "message": "状态码: 404"
     },
     {
@@ -181,7 +181,7 @@
       "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-05-31T16:57:37.849749",
+  "last_updated": "2026-06-01T20:10:57.791618",
   "total_count": 15,
   "available_count": 3,
   "static_count": 6,
