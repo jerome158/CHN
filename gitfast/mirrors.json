@@ -9,19 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 472.21,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 712.96,
+      "response_time": 833.89,
       "message": "可用"
     },
     {
@@ -33,44 +21,32 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 1089.77,
+      "response_time": 1123.48,
       "message": "可用"
     },
     {
-      "name": "GitHub搜索: ghfast",
-      "url": "https://gist.github.com/",
-      "prefix": "https://gist.github.com/",
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 9211.42,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: scoop-ghproxy",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:FrecklyComb1728/ghfast",
-      "description": "通过搜索发现 - 来源: github:FrecklyComb1728/ghfast",
+      "source": "github:svier0/scoop-ghproxy",
+      "description": "通过搜索发现 - 来源: github:svier0/scoop-ghproxy",
       "available": false,
-      "status_code": 404,
-      "response_time": 136.57,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": false,
-      "status_code": 429,
-      "response_time": 166.42,
-      "message": "状态码: 429"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": false,
-      "status_code": 429,
-      "response_time": 198.17,
-      "message": "状态码: 429"
+      "status_code": 400,
+      "response_time": 51.37,
+      "message": "状态码: 400"
     },
     {
       "name": "GitHub搜索: Ghproxy",
@@ -81,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 321.14,
+      "response_time": 281.51,
       "message": "状态码: 403"
     },
     {
@@ -93,7 +69,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 329.84,
+      "response_time": 282.7,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 372.74,
+      "response_time": 314.25,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +93,19 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1370.59,
+      "response_time": 1346.47,
+      "message": "状态码: 502"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 1362.06,
       "message": "状态码: 502"
     },
     {
@@ -129,20 +117,44 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2039.9,
+      "response_time": 3840.43,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
+      "name": "GitHub镜像加速 - ghproxy",
+      "url": "https://mirror.ghproxy.com",
+      "prefix": "https://mirror.ghproxy.com/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "description": "GitHub镜像加速 - ghproxy - GitHub加速镜像",
       "available": false,
-      "status_code": 502,
-      "response_time": 2736.19,
-      "message": "状态码: 502"
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
+    },
+    {
+      "name": "GitHub镜像加速 - moeyy",
+      "url": "https://gh.api.99988866.xyz",
+      "prefix": "https://gh.api.99988866.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - moeyy - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "('Connection aborted.', ConnectionResetError(104, "
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -169,31 +181,19 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     },
     {
-      "name": "GitHub镜像加速 - ghproxy",
-      "url": "https://mirror.ghproxy.com",
-      "prefix": "https://mirror.ghproxy.com/",
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy - GitHub加速镜像",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": false,
       "status_code": null,
       "response_time": null,
-      "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
-    },
-    {
-      "name": "GitHub镜像加速 - moeyy",
-      "url": "https://gh.api.99988866.xyz",
-      "prefix": "https://gh.api.99988866.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - moeyy - GitHub加速镜像",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
+      "message": "('Connection aborted.', ConnectionResetError(104, "
     }
   ],
-  "last_updated": "2026-06-09T17:53:28.646741",
+  "last_updated": "2026-06-10T18:24:45.770834",
   "total_count": 16,
   "available_count": 3,
   "static_count": 6,
