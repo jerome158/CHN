@@ -1,18 +1,6 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 585.29,
-      "message": "可用"
-    },
-    {
       "name": "GitHub镜像加速 - FastGit",
       "url": "https://hub.fastgit.xyz",
       "prefix": "https://hub.fastgit.xyz/",
@@ -21,19 +9,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 609.34,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 698.5,
+      "response_time": 289.18,
       "message": "可用"
     },
     {
@@ -45,7 +21,31 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 734.09,
+      "response_time": 485.75,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 533.75,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 970.64,
       "message": "可用"
     },
     {
@@ -57,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 1020.32,
+      "response_time": 978.03,
       "message": "可用"
     },
     {
@@ -69,7 +69,7 @@
       "description": "通过搜索发现 - 来源: github:Yizhou147/github-accelerator",
       "available": false,
       "status_code": 404,
-      "response_time": 55.51,
+      "response_time": 56.95,
       "message": "状态码: 404"
     },
     {
@@ -81,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 334.45,
+      "response_time": 330.55,
       "message": "状态码: 403"
     },
     {
@@ -93,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 337.68,
+      "response_time": 344.31,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 369.95,
+      "response_time": 425.07,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +117,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1260.23,
+      "response_time": 1376.89,
       "message": "状态码: 502"
     },
     {
@@ -129,7 +129,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1362.4,
+      "response_time": 1377.83,
       "message": "状态码: 502"
     },
     {
@@ -141,7 +141,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2723.6,
+      "response_time": 1908.14,
       "message": "状态码: 404"
     },
     {
@@ -193,7 +193,7 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-07-02T17:27:39.768785",
+  "last_updated": "2026-07-03T17:14:05.137974",
   "total_count": 16,
   "available_count": 5,
   "static_count": 6,
