@@ -9,31 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 569.27,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 574.48,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 586.96,
+      "response_time": 130.99,
       "message": "可用"
     },
     {
@@ -45,7 +21,31 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 646.76,
+      "response_time": 164.42,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 339.56,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 670.35,
       "message": "可用"
     },
     {
@@ -57,20 +57,8 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 1102.18,
+      "response_time": 777.91,
       "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
-      "url": "https://raw.githubusercontent.com/",
-      "prefix": "https://raw.githubusercontent.com/",
-      "type": "discovered",
-      "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
-      "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
-      "available": false,
-      "status_code": 404,
-      "response_time": 42.69,
-      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: scoop-proxy-cn",
@@ -81,44 +69,20 @@
       "description": "通过搜索发现 - 来源: github:Arama0517/scoop-proxy-cn",
       "available": false,
       "status_code": 404,
-      "response_time": 67.57,
+      "response_time": 125.63,
       "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
-      "url": "https://ghproxy.net/",
-      "prefix": "https://ghproxy.net/",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
       "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
       "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
       "available": false,
-      "status_code": 403,
-      "response_time": 280.67,
-      "message": "状态码: 403"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 283.2,
-      "message": "状态码: 403"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 356.82,
-      "message": "状态码: 403"
+      "status_code": 404,
+      "response_time": 134.36,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: scoop-proxy-cn",
@@ -129,8 +93,44 @@
       "description": "通过搜索发现 - 来源: github:Arama0517/scoop-proxy-cn",
       "available": false,
       "status_code": 404,
-      "response_time": 513.62,
+      "response_time": 438.26,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 445.93,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
+      "url": "https://ghproxy.net/",
+      "prefix": "https://ghproxy.net/",
+      "type": "discovered",
+      "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "available": false,
+      "status_code": 403,
+      "response_time": 449.15,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 467.41,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitClone",
@@ -141,7 +141,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1326.58,
+      "response_time": 1103.27,
       "message": "状态码: 502"
     },
     {
@@ -153,7 +153,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1363.68,
+      "response_time": 1118.87,
       "message": "状态码: 502"
     },
     {
@@ -165,7 +165,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2150.41,
+      "response_time": 2531.87,
       "message": "状态码: 404"
     },
     {
@@ -229,7 +229,7 @@
       "message": "HTTPSConnectionPool(host='ghproxy.cn', port=443): "
     }
   ],
-  "last_updated": "2026-07-07T17:52:06.783145",
+  "last_updated": "2026-07-08T17:20:05.764182",
   "total_count": 19,
   "available_count": 5,
   "static_count": 6,
