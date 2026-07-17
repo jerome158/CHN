@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 203.38,
+      "response_time": 413.14,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 233.77,
+      "response_time": 471.67,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 289.69,
+      "response_time": 635.59,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 352.59,
+      "response_time": 668.68,
       "message": "可用"
     },
     {
@@ -57,32 +57,32 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 876.28,
+      "response_time": 769.87,
       "message": "可用"
     },
     {
-      "name": "GitHub搜索: scoop-ghproxy",
+      "name": "GitHub搜索: fluxdown-plugin-github-accel",
       "url": "https://raw.githubusercontent.com/",
       "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:svier0/scoop-ghproxy",
-      "description": "通过搜索发现 - 来源: github:svier0/scoop-ghproxy",
+      "source": "github:zerx-lab/fluxdown-plugin-github-accel",
+      "description": "通过搜索发现 - 来源: github:zerx-lab/fluxdown-plugin-github-accel",
       "available": false,
       "status_code": 404,
-      "response_time": 150.49,
+      "response_time": 102.1,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "name": "GitHub搜索: fluxdown-plugin-github-accel",
+      "url": "https://gist.githubusercontent.com/",
+      "prefix": "https://gist.githubusercontent.com/",
+      "type": "discovered",
+      "source": "github:zerx-lab/fluxdown-plugin-github-accel",
+      "description": "通过搜索发现 - 来源: github:zerx-lab/fluxdown-plugin-github-accel",
       "available": false,
-      "status_code": 403,
-      "response_time": 457.23,
-      "message": "状态码: 403"
+      "status_code": 404,
+      "response_time": 293.56,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: Ghproxy",
@@ -93,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 468.09,
+      "response_time": 453.33,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 484.32,
+      "response_time": 456.86,
       "message": "状态码: 403"
     },
     {
@@ -117,8 +117,20 @@
       "description": "通过搜索发现 - 来源: github:Arama0517/scoop-url-switcher",
       "available": false,
       "status_code": 404,
-      "response_time": 686.65,
+      "response_time": 469.46,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 494.18,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitClone",
@@ -129,7 +141,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1242.76,
+      "response_time": 998.72,
       "message": "状态码: 502"
     },
     {
@@ -141,7 +153,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1366.69,
+      "response_time": 1255.54,
       "message": "状态码: 502"
     },
     {
@@ -153,7 +165,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1767.12,
+      "response_time": 1392.94,
       "message": "状态码: 404"
     },
     {
@@ -217,9 +229,9 @@
       "message": "HTTPSConnectionPool(host='my.mirror.example', port"
     }
   ],
-  "last_updated": "2026-07-16T17:04:02.462985",
-  "total_count": 18,
+  "last_updated": "2026-07-17T17:01:09.801711",
+  "total_count": 19,
   "available_count": 5,
   "static_count": 6,
-  "discovered_count": 11
+  "discovered_count": 12
 }
