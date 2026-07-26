@@ -9,19 +9,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 397.43,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 408.53,
+      "response_time": 405.35,
       "message": "可用"
     },
     {
@@ -33,7 +21,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 442.84,
+      "response_time": 558.96,
       "message": "可用"
     },
     {
@@ -45,7 +33,19 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 782.12,
+      "response_time": 592.05,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 645.35,
       "message": "可用"
     },
     {
@@ -57,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 787.74,
+      "response_time": 1080.57,
       "message": "可用"
     },
     {
@@ -69,20 +69,32 @@
       "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
       "available": false,
       "status_code": 404,
-      "response_time": 110.26,
+      "response_time": 33.17,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub搜索: MirrorProxy",
-      "url": "https://mirrors.xmission.com/",
-      "prefix": "https://mirrors.xmission.com/",
-      "type": "discovered",
-      "source": "github:inbjo/MirrorProxy",
-      "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
-      "status_code": 404,
-      "response_time": 123.93,
-      "message": "状态码: 404"
+      "status_code": 403,
+      "response_time": 281.39,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 362.4,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub搜索: Ghproxy",
@@ -93,32 +105,20 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 400.47,
+      "response_time": 411.65,
       "message": "状态码: 403"
     },
     {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "name": "GitHub搜索: MirrorProxy",
+      "url": "https://mirrors.xmission.com/",
+      "prefix": "https://mirrors.xmission.com/",
+      "type": "discovered",
+      "source": "github:inbjo/MirrorProxy",
+      "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
       "available": false,
-      "status_code": 403,
-      "response_time": 448.43,
-      "message": "状态码: 403"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 465.6,
-      "message": "状态码: 403"
+      "status_code": 404,
+      "response_time": 443.06,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: MirrorProxy",
@@ -129,7 +129,7 @@
       "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
       "available": false,
       "status_code": 404,
-      "response_time": 559.5,
+      "response_time": 772.7,
       "message": "状态码: 404"
     },
     {
@@ -141,7 +141,19 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1116.52,
+      "response_time": 1300.82,
+      "message": "状态码: 502"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 1343.96,
       "message": "状态码: 502"
     },
     {
@@ -153,20 +165,8 @@
       "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
       "available": false,
       "status_code": 404,
-      "response_time": 1161.49,
+      "response_time": 10661.44,
       "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1182.82,
-      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - Gitee镜像",
@@ -177,7 +177,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1613.39,
+      "response_time": 12138.79,
       "message": "状态码: 404"
     },
     {
@@ -242,18 +242,6 @@
     },
     {
       "name": "GitHub搜索: MirrorProxy",
-      "url": "https://mirror.example/",
-      "prefix": "https://mirror.example/",
-      "type": "discovered",
-      "source": "github:inbjo/MirrorProxy",
-      "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='mirror.example', port=44"
-    },
-    {
-      "name": "GitHub搜索: MirrorProxy",
       "url": "https://mirror.example.com/",
       "prefix": "https://mirror.example.com/",
       "type": "discovered",
@@ -263,9 +251,21 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='mirror.example.com', por"
+    },
+    {
+      "name": "GitHub搜索: MirrorProxy",
+      "url": "https://mirror.example/",
+      "prefix": "https://mirror.example/",
+      "type": "discovered",
+      "source": "github:inbjo/MirrorProxy",
+      "description": "通过搜索发现 - 来源: github:inbjo/MirrorProxy",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='mirror.example', port=44"
     }
   ],
-  "last_updated": "2026-07-25T16:45:59.963719",
+  "last_updated": "2026-07-26T16:49:28.292586",
   "total_count": 22,
   "available_count": 5,
   "static_count": 6,
