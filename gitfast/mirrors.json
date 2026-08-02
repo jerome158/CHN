@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 416.34,
+      "response_time": 591.91,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 422.42,
+      "response_time": 614.25,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 497.01,
+      "response_time": 650.29,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 655.11,
+      "response_time": 841.81,
       "message": "可用"
     },
     {
@@ -57,19 +57,19 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 859.49,
+      "response_time": 1158.55,
       "message": "可用"
     },
     {
-      "name": "GitHub搜索: forgery",
-      "url": "https://api.github.com/",
-      "prefix": "https://api.github.com/",
+      "name": "GitHub搜索: hubproxy",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:shkouyo/forgery",
-      "description": "通过搜索发现 - 来源: github:shkouyo/forgery",
+      "source": "github:sky22333/hubproxy",
+      "description": "通过搜索发现 - 来源: github:sky22333/hubproxy",
       "available": false,
       "status_code": 404,
-      "response_time": 94.14,
+      "response_time": 43.42,
       "message": "状态码: 404"
     },
     {
@@ -81,7 +81,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 343.33,
+      "response_time": 281.08,
       "message": "状态码: 403"
     },
     {
@@ -93,7 +93,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 363.55,
+      "response_time": 283.46,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 412.02,
+      "response_time": 1108.38,
       "message": "状态码: 403"
     },
     {
@@ -117,19 +117,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1470.82,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1637.02,
+      "response_time": 2226.67,
       "message": "状态码: 502"
     },
     {
@@ -141,8 +129,20 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 4113.43,
+      "response_time": 2846.21,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
+      "available": false,
+      "status_code": 502,
+      "response_time": 2846.73,
+      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -193,7 +193,7 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-08-01T16:50:39.313136",
+  "last_updated": "2026-08-02T16:48:40.004863",
   "total_count": 16,
   "available_count": 5,
   "static_count": 6,
