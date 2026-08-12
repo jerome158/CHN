@@ -1,15 +1,15 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 746.88,
+      "response_time": 617.54,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 802.92,
+      "response_time": 626.76,
       "message": "可用"
     },
     {
@@ -33,20 +33,32 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 895.57,
+      "response_time": 939.84,
       "message": "可用"
     },
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 932.68,
+      "response_time": 1861.24,
       "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: Ghproxy",
+      "url": "https://ghproxy.net/",
+      "prefix": "https://ghproxy.net/",
+      "type": "discovered",
+      "source": "github:weekoo2025/Ghproxy",
+      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
+      "available": false,
+      "status_code": 403,
+      "response_time": 284.36,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitProxy",
@@ -57,7 +69,19 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 326.22,
+      "response_time": 331.39,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 336.54,
       "message": "状态码: 403"
     },
     {
@@ -69,20 +93,8 @@
       "description": "通过搜索发现 - 来源: github:Arama0517/scoop-url-switcher",
       "available": false,
       "status_code": 404,
-      "response_time": 376.17,
+      "response_time": 636.16,
       "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 424.1,
-      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitClone",
@@ -93,7 +105,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 2885.45,
+      "response_time": 4390.92,
       "message": "状态码: 502"
     },
     {
@@ -105,7 +117,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 3139.9,
+      "response_time": 4408.73,
       "message": "状态码: 502"
     },
     {
@@ -117,7 +129,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 3730.23,
+      "response_time": 4847.66,
       "message": "状态码: 404"
     },
     {
@@ -181,9 +193,9 @@
       "message": "HTTPSConnectionPool(host='hub.gitmirror.com', port"
     }
   ],
-  "last_updated": "2026-08-11T16:48:05.627203",
-  "total_count": 15,
+  "last_updated": "2026-08-12T16:47:11.676721",
+  "total_count": 16,
   "available_count": 4,
-  "static_count": 7,
-  "discovered_count": 8
+  "static_count": 6,
+  "discovered_count": 9
 }
