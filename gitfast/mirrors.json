@@ -1,15 +1,15 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 414.62,
+      "response_time": 211.49,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 525.2,
+      "response_time": 213.69,
       "message": "可用"
     },
     {
@@ -33,19 +33,19 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 557.95,
+      "response_time": 409.24,
       "message": "可用"
     },
     {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 633.54,
+      "response_time": 569.13,
       "message": "可用"
     },
     {
@@ -57,32 +57,44 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 1235.13,
+      "response_time": 660.25,
       "message": "可用"
     },
     {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "name": "GitHub搜索: gh-proxy",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
+      "type": "discovered",
+      "source": "github:totootao/gh-proxy",
+      "description": "通过搜索发现 - 来源: github:totootao/gh-proxy",
       "available": false,
-      "status_code": 403,
-      "response_time": 340.13,
-      "message": "状态码: 403"
+      "status_code": 404,
+      "response_time": 117.43,
+      "message": "状态码: 404"
     },
     {
-      "name": "GitHub搜索: dsh-github-proxy",
-      "url": "https://ghproxy.net/",
-      "prefix": "https://ghproxy.net/",
+      "name": "GitHub搜索: gh-proxy",
+      "url": "https://api.github.com/",
+      "prefix": "https://api.github.com/",
       "type": "discovered",
-      "source": "github:userrsl/dsh-github-proxy",
-      "description": "通过搜索发现 - 来源: github:userrsl/dsh-github-proxy",
+      "source": "github:totootao/gh-proxy",
+      "description": "通过搜索发现 - 来源: github:totootao/gh-proxy",
       "available": false,
-      "status_code": 403,
-      "response_time": 346.2,
-      "message": "状态码: 403"
+      "status_code": 404,
+      "response_time": 124.8,
+      "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub搜索: CF-Workers-GitHub",
+      "url": "https://gist.githubusercontent.com/",
+      "prefix": "https://gist.githubusercontent.com/",
+      "type": "discovered",
+      "source": "github:xsxinghen/CF-Workers-GitHub",
+      "description": "通过搜索发现 - 来源: github:xsxinghen/CF-Workers-GitHub",
+      "available": false,
+      "status_code": 404,
+      "response_time": 354.69,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: scoop-accelerator",
@@ -93,8 +105,20 @@
       "description": "通过搜索发现 - 来源: github:Arama20120517/scoop-accelerator",
       "available": false,
       "status_code": 404,
-      "response_time": 383.53,
+      "response_time": 441.81,
       "message": "状态码: 404"
+    },
+    {
+      "name": "GitHub搜索: Ghproxy",
+      "url": "https://ghproxy.net/",
+      "prefix": "https://ghproxy.net/",
+      "type": "discovered",
+      "source": "github:weekoo2025/Ghproxy",
+      "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
+      "available": false,
+      "status_code": 403,
+      "response_time": 446.89,
+      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitProxy",
@@ -105,7 +129,19 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 401.83,
+      "response_time": 449.2,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 515.75,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +153,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1069.1,
+      "response_time": 1098.66,
       "message": "状态码: 502"
     },
     {
@@ -129,7 +165,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1334.54,
+      "response_time": 1173.32,
       "message": "状态码: 502"
     },
     {
@@ -141,7 +177,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2281.72,
+      "response_time": 1836.22,
       "message": "状态码: 404"
     },
     {
@@ -193,9 +229,9 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-09-06T17:53:36.352379",
-  "total_count": 16,
+  "last_updated": "2026-09-07T19:29:48.155887",
+  "total_count": 19,
   "available_count": 5,
   "static_count": 6,
-  "discovered_count": 9
+  "discovered_count": 12
 }
