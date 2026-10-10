@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 206.57,
+      "response_time": 176.67,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 259.07,
+      "response_time": 229.69,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 345.91,
+      "response_time": 550.25,
       "message": "可用"
     },
     {
@@ -45,7 +45,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 423.03,
+      "response_time": 598.16,
       "message": "可用"
     },
     {
@@ -57,7 +57,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": true,
       "status_code": 200,
-      "response_time": 846.2,
+      "response_time": 754.48,
       "message": "可用"
     },
     {
@@ -69,7 +69,7 @@
       "description": "通过搜索发现 - 来源: github:carsonz/hublane",
       "available": false,
       "status_code": 404,
-      "response_time": 95.92,
+      "response_time": 99.09,
       "message": "状态码: 404"
     },
     {
@@ -81,7 +81,7 @@
       "description": "通过搜索发现 - 来源: github:Ahua9527/ReleaseProxy",
       "available": false,
       "status_code": 404,
-      "response_time": 173.06,
+      "response_time": 107.59,
       "message": "状态码: 404"
     },
     {
@@ -93,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:ANGLE404/github-watchdog",
       "available": false,
       "status_code": 404,
-      "response_time": 201.37,
+      "response_time": 126.83,
       "message": "状态码: 404"
     },
     {
@@ -105,7 +105,7 @@
       "description": "通过搜索发现 - 来源: github:watchern/CF-Workers-GitHub",
       "available": false,
       "status_code": 404,
-      "response_time": 432.48,
+      "response_time": 377.55,
       "message": "状态码: 404"
     },
     {
@@ -117,7 +117,7 @@
       "description": "通过搜索发现 - 来源: github:weekoo2025/Ghproxy",
       "available": false,
       "status_code": 403,
-      "response_time": 443.96,
+      "response_time": 449.68,
       "message": "状态码: 403"
     },
     {
@@ -129,7 +129,19 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 447.61,
+      "response_time": 455.13,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 474.94,
       "message": "状态码: 403"
     },
     {
@@ -141,20 +153,8 @@
       "description": "通过搜索发现 - 来源: github:carsonz/hublane",
       "available": false,
       "status_code": 401,
-      "response_time": 510.25,
+      "response_time": 482.52,
       "message": "状态码: 401"
-    },
-    {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
-      "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
-      "available": false,
-      "status_code": 403,
-      "response_time": 580.44,
-      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitClone",
@@ -165,7 +165,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 912.02,
+      "response_time": 1056.56,
       "message": "状态码: 502"
     },
     {
@@ -177,7 +177,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1371.29,
+      "response_time": 1240.5,
       "message": "状态码: 502"
     },
     {
@@ -189,7 +189,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1792.0,
+      "response_time": 1639.63,
       "message": "状态码: 404"
     },
     {
@@ -241,7 +241,7 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-10-09T20:24:35.874206",
+  "last_updated": "2026-10-10T19:38:36.151754",
   "total_count": 20,
   "available_count": 5,
   "static_count": 6,
