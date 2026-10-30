@@ -1,75 +1,51 @@
 {
   "mirrors": [
     {
-      "name": "GitHub搜索: gh-accel",
-      "url": "https://your-mirror.com/",
-      "prefix": "https://your-mirror.com/",
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 645.0,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 793.57,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub搜索: apt-install-unstuck",
+      "url": "http://mirrors.edge.kernel.org/",
+      "prefix": "http://mirrors.edge.kernel.org/",
       "type": "discovered",
-      "source": "github:Cool-zimo/gh-accel",
-      "description": "通过搜索发现 - 来源: github:Cool-zimo/gh-accel",
-      "available": true,
-      "status_code": 200,
-      "response_time": 394.13,
-      "message": "可用"
+      "source": "github:jksy/apt-install-unstuck",
+      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
+      "available": false,
+      "status_code": 404,
+      "response_time": 51.43,
+      "message": "状态码: 404"
     },
     {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 498.4,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 532.42,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 597.67,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 603.52,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: gh-accel",
+      "name": "GitHub搜索: mirror-lens",
       "url": "https://raw.githubusercontent.com/",
       "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:Cool-zimo/gh-accel",
-      "description": "通过搜索发现 - 来源: github:Cool-zimo/gh-accel",
+      "source": "github:zggnh12345/mirror-lens",
+      "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
       "available": false,
       "status_code": 404,
-      "response_time": 34.39,
+      "response_time": 104.77,
       "message": "状态码: 404"
     },
     {
@@ -81,19 +57,7 @@
       "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
       "available": false,
       "status_code": 404,
-      "response_time": 48.09,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: apt-install-unstuck",
-      "url": "http://mirrors.edge.kernel.org/",
-      "prefix": "http://mirrors.edge.kernel.org/",
-      "type": "discovered",
-      "source": "github:jksy/apt-install-unstuck",
-      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
-      "available": false,
-      "status_code": 404,
-      "response_time": 76.07,
+      "response_time": 147.02,
       "message": "状态码: 404"
     },
     {
@@ -105,7 +69,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 282.73,
+      "response_time": 400.45,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 326.5,
+      "response_time": 431.84,
       "message": "状态码: 403"
     },
     {
@@ -129,7 +93,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1318.15,
+      "response_time": 1224.27,
       "message": "状态码: 502"
     },
     {
@@ -141,7 +105,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1431.36,
+      "response_time": 1253.29,
       "message": "状态码: 502"
     },
     {
@@ -153,7 +117,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 5468.02,
+      "response_time": 2001.77,
       "message": "状态码: 404"
     },
     {
@@ -169,6 +133,18 @@
       "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
     },
     {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "超时"
+    },
+    {
       "name": "GitHub镜像加速 - moeyy",
       "url": "https://gh.api.99988866.xyz",
       "prefix": "https://gh.api.99988866.xyz/",
@@ -193,6 +169,18 @@
       "message": "HTTPSConnectionPool(host='mirror.ghproxy.com', por"
     },
     {
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "超时"
+    },
+    {
       "name": "GitHub镜像加速 - moeyy",
       "url": "https://gh.api.99988866.xyz",
       "prefix": "https://gh.api.99988866.xyz/",
@@ -203,23 +191,11 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
-    },
-    {
-      "name": "GitHub搜索: gh-accel",
-      "url": "https://raw.your-mirror.com/",
-      "prefix": "https://raw.your-mirror.com/",
-      "type": "discovered",
-      "source": "github:Cool-zimo/gh-accel",
-      "description": "通过搜索发现 - 来源: github:Cool-zimo/gh-accel",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='raw.your-mirror.com', po"
     }
   ],
-  "last_updated": "2026-10-29T20:44:55.092051",
-  "total_count": 18,
-  "available_count": 5,
+  "last_updated": "2026-10-30T20:16:18.840430",
+  "total_count": 16,
+  "available_count": 2,
   "static_count": 7,
-  "discovered_count": 11
+  "discovered_count": 9
 }
