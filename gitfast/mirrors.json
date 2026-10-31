@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 645.0,
+      "response_time": 404.62,
       "message": "可用"
     },
     {
@@ -21,20 +21,8 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 793.57,
+      "response_time": 495.6,
       "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: apt-install-unstuck",
-      "url": "http://mirrors.edge.kernel.org/",
-      "prefix": "http://mirrors.edge.kernel.org/",
-      "type": "discovered",
-      "source": "github:jksy/apt-install-unstuck",
-      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
-      "available": false,
-      "status_code": 404,
-      "response_time": 51.43,
-      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: mirror-lens",
@@ -45,19 +33,7 @@
       "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
       "available": false,
       "status_code": 404,
-      "response_time": 104.77,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: apt-install-unstuck",
-      "url": "https://docs.github.com/",
-      "prefix": "https://docs.github.com/",
-      "type": "discovered",
-      "source": "github:jksy/apt-install-unstuck",
-      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
-      "available": false,
-      "status_code": 404,
-      "response_time": 147.02,
+      "response_time": 55.91,
       "message": "状态码: 404"
     },
     {
@@ -69,7 +45,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 400.45,
+      "response_time": 365.91,
       "message": "状态码: 403"
     },
     {
@@ -81,32 +57,8 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 431.84,
+      "response_time": 419.37,
       "message": "状态码: 403"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1224.27,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1253.29,
-      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - Gitee镜像",
@@ -117,7 +69,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2001.77,
+      "response_time": 2130.82,
       "message": "状态码: 404"
     },
     {
@@ -139,6 +91,18 @@
       "type": "static",
       "source": "unknown",
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "超时"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": null,
       "response_time": null,
@@ -175,6 +139,18 @@
       "type": "static",
       "source": "unknown",
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "超时"
+    },
+    {
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": null,
       "response_time": null,
@@ -193,9 +169,9 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-10-30T20:16:18.840430",
-  "total_count": 16,
+  "last_updated": "2026-10-31T19:38:12.500373",
+  "total_count": 14,
   "available_count": 2,
   "static_count": 7,
-  "discovered_count": 9
+  "discovered_count": 7
 }
