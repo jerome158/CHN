@@ -9,19 +9,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 247.05,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: justget",
-      "url": "https://mirror2.com/",
-      "prefix": "https://mirror2.com/",
-      "type": "discovered",
-      "source": "github:justdb/justget",
-      "description": "通过搜索发现 - 来源: github:justdb/justget",
-      "available": true,
-      "status_code": 200,
-      "response_time": 256.33,
+      "response_time": 167.5,
       "message": "可用"
     },
     {
@@ -33,7 +21,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 373.81,
+      "response_time": 378.81,
       "message": "可用"
     },
     {
@@ -45,7 +33,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 390.48,
+      "response_time": 484.2,
       "message": "可用"
     },
     {
@@ -57,19 +45,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 449.34,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: justget",
-      "url": "https://npmmirror.com/",
-      "prefix": "https://npmmirror.com/",
-      "type": "discovered",
-      "source": "github:justdb/justget",
-      "description": "通过搜索发现 - 来源: github:justdb/justget",
-      "available": true,
-      "status_code": 200,
-      "response_time": 1104.45,
+      "response_time": 488.69,
       "message": "可用"
     },
     {
@@ -81,19 +57,7 @@
       "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
       "available": false,
       "status_code": 404,
-      "response_time": 85.05,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: apt-install-unstuck",
-      "url": "https://docs.github.com/",
-      "prefix": "https://docs.github.com/",
-      "type": "discovered",
-      "source": "github:jksy/apt-install-unstuck",
-      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
-      "available": false,
-      "status_code": 404,
-      "response_time": 93.59,
+      "response_time": 52.38,
       "message": "状态码: 404"
     },
     {
@@ -105,20 +69,8 @@
       "description": "通过搜索发现 - 来源: github:xinghanzhuyue/github-",
       "available": false,
       "status_code": 404,
-      "response_time": 237.4,
+      "response_time": 214.8,
       "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: justget",
-      "url": "https://mirror1.com/",
-      "prefix": "https://mirror1.com/",
-      "type": "discovered",
-      "source": "github:justdb/justget",
-      "description": "通过搜索发现 - 来源: github:justdb/justget",
-      "available": false,
-      "status_code": 403,
-      "response_time": 257.73,
-      "message": "状态码: 403"
     },
     {
       "name": "GitHub镜像加速 - GitProxy",
@@ -129,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 415.33,
+      "response_time": 335.27,
       "message": "状态码: 403"
     },
     {
@@ -141,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:xinghanzhuyue/github-",
       "available": false,
       "status_code": 403,
-      "response_time": 418.59,
+      "response_time": 343.39,
       "message": "状态码: 403"
     },
     {
@@ -153,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 473.32,
+      "response_time": 407.02,
       "message": "状态码: 403"
     },
     {
@@ -165,19 +117,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 1153.65,
-      "message": "状态码: 502"
-    },
-    {
-      "name": "GitHub镜像加速 - GitClone",
-      "url": "https://gitclone.com",
-      "prefix": "https://gitclone.com/github.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
-      "available": false,
-      "status_code": 502,
-      "response_time": 1448.28,
+      "response_time": 1192.05,
       "message": "状态码: 502"
     },
     {
@@ -189,32 +129,20 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1861.34,
+      "response_time": 1465.52,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub搜索: justget",
-      "url": "https://mirrors.tuna.tsinghua.edu.cn/",
-      "prefix": "https://mirrors.tuna.tsinghua.edu.cn/",
-      "type": "discovered",
-      "source": "github:justdb/justget",
-      "description": "通过搜索发现 - 来源: github:justdb/justget",
+      "name": "GitHub镜像加速 - GitClone",
+      "url": "https://gitclone.com",
+      "prefix": "https://gitclone.com/github.com/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
-      "status_code": 404,
-      "response_time": 2584.62,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: apt-install-unstuck",
-      "url": "http://mirrors.edge.kernel.org/",
-      "prefix": "http://mirrors.edge.kernel.org/",
-      "type": "discovered",
-      "source": "github:jksy/apt-install-unstuck",
-      "description": "通过搜索发现 - 来源: github:jksy/apt-install-unstuck",
-      "available": false,
-      "status_code": 404,
-      "response_time": 8439.45,
-      "message": "状态码: 404"
+      "status_code": 502,
+      "response_time": 1481.76,
+      "message": "状态码: 502"
     },
     {
       "name": "GitHub镜像加速 - ghproxy",
@@ -265,9 +193,9 @@
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
     }
   ],
-  "last_updated": "2026-11-14T20:14:48.682405",
-  "total_count": 22,
-  "available_count": 6,
+  "last_updated": "2026-11-15T20:40:03.645717",
+  "total_count": 16,
+  "available_count": 4,
   "static_count": 6,
-  "discovered_count": 15
+  "discovered_count": 9
 }
