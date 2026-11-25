@@ -9,7 +9,31 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 327.26,
+      "response_time": 354.55,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 395.76,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 492.33,
       "message": "可用"
     },
     {
@@ -21,55 +45,19 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 377.28,
+      "response_time": 503.48,
       "message": "可用"
     },
     {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 862.72,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 990.11,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: FastGithub",
-      "url": "https://api.github.com/",
-      "prefix": "https://api.github.com/",
-      "type": "discovered",
-      "source": "github:ldpc520/FastGithub",
-      "description": "通过搜索发现 - 来源: github:ldpc520/FastGithub",
-      "available": false,
-      "status_code": 404,
-      "response_time": 75.88,
-      "message": "状态码: 404"
-    },
-    {
-      "name": "GitHub搜索: mirror-lens",
+      "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
       "url": "https://raw.githubusercontent.com/",
       "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:zggnh12345/mirror-lens",
-      "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
+      "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
       "available": false,
       "status_code": 404,
-      "response_time": 92.91,
+      "response_time": 61.77,
       "message": "状态码: 404"
     },
     {
@@ -81,8 +69,20 @@
       "description": "通过搜索发现 - 来源: github:ojso/ghproxy",
       "available": false,
       "status_code": 618,
-      "response_time": 96.38,
+      "response_time": 88.76,
       "message": "状态码: 618"
+    },
+    {
+      "name": "GitHub搜索: FastGithub",
+      "url": "https://api.github.com/",
+      "prefix": "https://api.github.com/",
+      "type": "discovered",
+      "source": "github:ldpc520/FastGithub",
+      "description": "通过搜索发现 - 来源: github:ldpc520/FastGithub",
+      "available": false,
+      "status_code": 404,
+      "response_time": 103.45,
+      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: FastGithub",
@@ -93,19 +93,19 @@
       "description": "通过搜索发现 - 来源: github:RC1844/FastGithub",
       "available": false,
       "status_code": 404,
-      "response_time": 172.08,
+      "response_time": 222.92,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub镜像加速 - GitProxy",
-      "url": "https://ghproxy.net",
+      "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
+      "url": "https://ghproxy.net/",
       "prefix": "https://ghproxy.net/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "type": "discovered",
+      "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
       "available": false,
       "status_code": 403,
-      "response_time": 470.4,
+      "response_time": 342.21,
       "message": "状态码: 403"
     },
     {
@@ -117,8 +117,32 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 893.78,
+      "response_time": 372.27,
       "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub镜像加速 - GitProxy",
+      "url": "https://ghproxy.net",
+      "prefix": "https://ghproxy.net/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
+      "available": false,
+      "status_code": 403,
+      "response_time": 409.43,
+      "message": "状态码: 403"
+    },
+    {
+      "name": "GitHub搜索: anytls-vless-reality-hysteria2-tuic-ss",
+      "url": "https://ghproxy.cn/",
+      "prefix": "https://ghproxy.cn/",
+      "type": "discovered",
+      "source": "github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "description": "通过搜索发现 - 来源: github:python-net-dev/anytls-vless-reality-hysteria2-tuic-ss",
+      "available": false,
+      "status_code": 405,
+      "response_time": 912.64,
+      "message": "状态码: 405"
     },
     {
       "name": "GitHub镜像加速 - Gitee镜像",
@@ -129,7 +153,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 1462.08,
+      "response_time": 2713.21,
       "message": "状态码: 404"
     },
     {
@@ -203,11 +227,23 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
+    },
+    {
+      "name": "GitHub搜索: FastGithub",
+      "url": "https://api.kkgithub.com/",
+      "prefix": "https://api.kkgithub.com/",
+      "type": "discovered",
+      "source": "github:RC1844/FastGithub",
+      "description": "通过搜索发现 - 来源: github:RC1844/FastGithub",
+      "available": false,
+      "status_code": null,
+      "response_time": null,
+      "message": "HTTPSConnectionPool(host='api.kkgithub.com', port="
     }
   ],
-  "last_updated": "2026-11-25T00:14:32.768593",
-  "total_count": 17,
+  "last_updated": "2026-11-25T23:54:39.948856",
+  "total_count": 20,
   "available_count": 4,
-  "static_count": 7,
-  "discovered_count": 10
+  "static_count": 6,
+  "discovered_count": 13
 }
