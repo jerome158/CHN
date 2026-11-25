@@ -1,15 +1,15 @@
 {
   "mirrors": [
     {
-      "name": "GitHub镜像加速 - FastGit",
-      "url": "https://hub.fastgit.xyz",
-      "prefix": "https://hub.fastgit.xyz/",
+      "name": "GitHub镜像加速 - ghproxy.com",
+      "url": "https://ghproxy.com",
+      "prefix": "https://ghproxy.com/",
       "type": "static",
       "source": "unknown",
-      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 285.19,
+      "response_time": 327.26,
       "message": "可用"
     },
     {
@@ -21,19 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 401.31,
-      "message": "可用"
-    },
-    {
-      "name": "GitHub镜像加速 - ghproxy.com",
-      "url": "https://ghproxy.com",
-      "prefix": "https://ghproxy.com/",
-      "type": "static",
-      "source": "unknown",
-      "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
-      "available": true,
-      "status_code": 200,
-      "response_time": 420.77,
+      "response_time": 377.28,
       "message": "可用"
     },
     {
@@ -45,7 +33,19 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 550.95,
+      "response_time": 862.72,
+      "message": "可用"
+    },
+    {
+      "name": "GitHub镜像加速 - FastGit",
+      "url": "https://hub.fastgit.xyz",
+      "prefix": "https://hub.fastgit.xyz/",
+      "type": "static",
+      "source": "unknown",
+      "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
+      "available": true,
+      "status_code": 200,
+      "response_time": 990.11,
       "message": "可用"
     },
     {
@@ -57,19 +57,19 @@
       "description": "通过搜索发现 - 来源: github:ldpc520/FastGithub",
       "available": false,
       "status_code": 404,
-      "response_time": 77.37,
+      "response_time": 75.88,
       "message": "状态码: 404"
     },
     {
-      "name": "GitHub搜索: ghproxy",
+      "name": "GitHub搜索: mirror-lens",
       "url": "https://raw.githubusercontent.com/",
       "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:ojso/ghproxy",
-      "description": "通过搜索发现 - 来源: github:ojso/ghproxy",
+      "source": "github:zggnh12345/mirror-lens",
+      "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
       "available": false,
       "status_code": 404,
-      "response_time": 80.0,
+      "response_time": 92.91,
       "message": "状态码: 404"
     },
     {
@@ -81,7 +81,7 @@
       "description": "通过搜索发现 - 来源: github:ojso/ghproxy",
       "available": false,
       "status_code": 618,
-      "response_time": 99.75,
+      "response_time": 96.38,
       "message": "状态码: 618"
     },
     {
@@ -93,7 +93,7 @@
       "description": "通过搜索发现 - 来源: github:RC1844/FastGithub",
       "available": false,
       "status_code": 404,
-      "response_time": 167.78,
+      "response_time": 172.08,
       "message": "状态码: 404"
     },
     {
@@ -105,7 +105,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 444.18,
+      "response_time": 470.4,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +117,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 502.66,
+      "response_time": 893.78,
       "message": "状态码: 403"
     },
     {
@@ -129,7 +129,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 2154.19,
+      "response_time": 1462.08,
       "message": "状态码: 404"
     },
     {
@@ -203,23 +203,11 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
-    },
-    {
-      "name": "GitHub搜索: claude-code-mirror",
-      "url": "https://claude-code-mirror.qingbo-my.workers.dev/",
-      "prefix": "https://claude-code-mirror.qingbo-my.workers.dev/",
-      "type": "discovered",
-      "source": "github:esyion/claude-code-mirror",
-      "description": "通过搜索发现 - 来源: github:esyion/claude-code-mirror",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='claude-code-mirror.qingb"
     }
   ],
-  "last_updated": "2026-11-24T02:41:03.109118",
-  "total_count": 18,
+  "last_updated": "2026-11-25T00:14:32.768593",
+  "total_count": 17,
   "available_count": 4,
   "static_count": 7,
-  "discovered_count": 11
+  "discovered_count": 10
 }
