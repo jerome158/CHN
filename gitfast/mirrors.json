@@ -9,7 +9,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 161.39,
+      "response_time": 300.72,
       "message": "可用"
     },
     {
@@ -21,7 +21,7 @@
       "description": "GitHub镜像加速 - ghproxy.com - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 165.65,
+      "response_time": 324.97,
       "message": "可用"
     },
     {
@@ -33,7 +33,7 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 351.25,
+      "response_time": 356.36,
       "message": "可用"
     },
     {
@@ -45,20 +45,8 @@
       "description": "GitHub镜像加速 - FastGit - GitHub加速镜像",
       "available": true,
       "status_code": 200,
-      "response_time": 402.52,
+      "response_time": 376.72,
       "message": "可用"
-    },
-    {
-      "name": "GitHub搜索: mirror-lens",
-      "url": "https://raw.githubusercontent.com/",
-      "prefix": "https://raw.githubusercontent.com/",
-      "type": "discovered",
-      "source": "github:zggnh12345/mirror-lens",
-      "description": "通过搜索发现 - 来源: github:zggnh12345/mirror-lens",
-      "available": false,
-      "status_code": 404,
-      "response_time": 80.3,
-      "message": "状态码: 404"
     },
     {
       "name": "GitHub搜索: ghproxy",
@@ -69,19 +57,19 @@
       "description": "通过搜索发现 - 来源: github:ojso/ghproxy",
       "available": false,
       "status_code": 618,
-      "response_time": 82.54,
+      "response_time": 81.76,
       "message": "状态码: 618"
     },
     {
-      "name": "GitHub搜索: FastGithub",
-      "url": "https://gist.github.com/",
-      "prefix": "https://gist.github.com/",
+      "name": "GitHub搜索: ghproxy",
+      "url": "https://raw.githubusercontent.com/",
+      "prefix": "https://raw.githubusercontent.com/",
       "type": "discovered",
-      "source": "github:RC1844/FastGithub",
-      "description": "通过搜索发现 - 来源: github:RC1844/FastGithub",
+      "source": "github:ojso/ghproxy",
+      "description": "通过搜索发现 - 来源: github:ojso/ghproxy",
       "available": false,
       "status_code": 404,
-      "response_time": 218.6,
+      "response_time": 83.59,
       "message": "状态码: 404"
     },
     {
@@ -93,7 +81,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 538.99,
+      "response_time": 374.14,
       "message": "状态码: 403"
     },
     {
@@ -105,7 +93,7 @@
       "description": "GitHub镜像加速 - GitProxy - GitHub加速镜像",
       "available": false,
       "status_code": 403,
-      "response_time": 803.96,
+      "response_time": 429.88,
       "message": "状态码: 403"
     },
     {
@@ -117,7 +105,7 @@
       "description": "通过搜索发现 - 来源: github:piaopiaosir/FastGithub-GoGo",
       "available": false,
       "status_code": 404,
-      "response_time": 1340.82,
+      "response_time": 1360.31,
       "message": "状态码: 404"
     },
     {
@@ -129,7 +117,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 2379.1,
+      "response_time": 1480.07,
       "message": "状态码: 502"
     },
     {
@@ -141,7 +129,7 @@
       "description": "GitHub镜像加速 - GitClone - GitHub加速镜像",
       "available": false,
       "status_code": 502,
-      "response_time": 2433.32,
+      "response_time": 1693.13,
       "message": "状态码: 502"
     },
     {
@@ -153,7 +141,7 @@
       "description": "GitHub镜像加速 - Gitee镜像 - GitHub加速镜像",
       "available": false,
       "status_code": 404,
-      "response_time": 3279.23,
+      "response_time": 2010.31,
       "message": "状态码: 404"
     },
     {
@@ -203,23 +191,11 @@
       "status_code": null,
       "response_time": null,
       "message": "HTTPSConnectionPool(host='gh.api.99988866.xyz', po"
-    },
-    {
-      "name": "GitHub搜索: FastGithub",
-      "url": "https://api.kkgithub.com/",
-      "prefix": "https://api.kkgithub.com/",
-      "type": "discovered",
-      "source": "github:RC1844/FastGithub",
-      "description": "通过搜索发现 - 来源: github:RC1844/FastGithub",
-      "available": false,
-      "status_code": null,
-      "response_time": null,
-      "message": "HTTPSConnectionPool(host='api.kkgithub.com', port="
     }
   ],
-  "last_updated": "2026-11-27T00:10:51.323646",
-  "total_count": 18,
+  "last_updated": "2026-11-27T23:50:30.651608",
+  "total_count": 16,
   "available_count": 4,
   "static_count": 7,
-  "discovered_count": 11
+  "discovered_count": 9
 }
